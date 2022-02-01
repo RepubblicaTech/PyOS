@@ -1,2 +1,2 @@
 # PyOS
- A simple Python OS (Still development)
+ A simple Python OS (Still developing)
