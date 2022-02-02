@@ -20,4 +20,4 @@ else:
 
 if cwd == "start":
     os.system('cls')
-    os.system('Guide.py')
+    os.system('../Guide.py')
