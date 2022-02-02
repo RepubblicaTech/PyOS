@@ -7,7 +7,4 @@
 
 Very short video on how to install pyOS:
 
-
-
-https://user-images.githubusercontent.com/76620155/152223087-ebbe7a07-5753-4611-82c7-1591d2f7c59b.mp4
-
+https://user-images.githubusercontent.com/76620155/152223958-002b744b-3021-4456-a3ff-e1599a01bd6c.mp4
