@@ -1,11 +1,12 @@
 import settings
+from settings import user
 import os
 
 print("Welcome to PythonOS!")
 print("PythonOS login:")
 user_name = input()
 
-if user_name == settings.user:
+if user_name == user:
     print("Enter password:")
     password = input()
     if password == settings.passwd:
