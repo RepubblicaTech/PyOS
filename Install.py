@@ -1,4 +1,4 @@
-print("Welcome to pyOS Installer!")
+print("Welcome to PyOS Installer!")
 print("You will configure the system for your needs.")
 print("")
 print("Enter username:")

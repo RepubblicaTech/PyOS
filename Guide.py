@@ -4,27 +4,29 @@ from pathlib import Path
 from tqdm import tqdm
 from time import sleep
 import requests
+import sys
 
 
 def onea():
     os.system('cls')
-    r = open("manual.py", "w")
-    r.write("# 1a")
-    r.close()
+    f = open("manual.py", "w")
+    f.write("# 1a")
+    f.close()
     print("Chapter 1a. The basics")
     print("")
     print("Welcome to the basics.")
+    print("")
     print("What you see down here is the information about the user and the directory")
     print("where you are working in.")
     print("")
     print('Try to type a name to replace with "user_name" (for example your username):')
     usr = input("user_name@directory # ")
     os.system('cls')
-    print(usr.lower() + "@directory # ")
+    print(usr + "@directory # ")
     print("Successful. Now, try to type 'cd home':")
-    input(usr.lower() + "@directory # ")
+    input(usr + "@directory # ")
     os.system('cls')
-    print(usr.lower() + "@home # ")
+    print(usr + "@home # ")
     print("Well done!")
     input("Press Enter to go to the next chapter")
     os.system('cls')
@@ -32,14 +34,32 @@ def onea():
 
 
 def oneb():
-    f = open("manual.py", "r")
-    cron = f.read()
-    if cron == "# 1a":
-        f = open("manual.py", "w")
-        f.write("# 1b")
-        f.close()
-    print("Chapter 1b. The Basics.")
-    input()
+    print("Chapter 1b. Basic operations.")
+    print("")
+    print("Try to type:")
+    print("open tutorial.txt")
+    o = input(settings.user + "@home # ")
+    os.system('cls')
+    if o == "open tutorial.txt":
+        txt = open("tutorial.txt", "r")
+        r = txt.read()
+        print("<open> Result:")
+        print(r)
+        print("")
+        print("Successfull! Press Enter to continue...")
+        input()
+        os.system('cls')
+        print("let's try another command!")
+        print("Try to type:")
+        print("print")
+        cm = input(settings.user + "@pyos # ")
+        if cm == "print":
+            print("Welcome to the Print Shell!")
+            input(settings.user + "> ")
+        else:
+            sys.exit(0)
+    else:
+        sys.exit(0)
 
 
 print("Welcome to the PythonOS Start Guide!")
@@ -89,8 +109,10 @@ if history.is_file():
         print("Do you want to continue with chapter 1b [yes/no]?")
         answer = input()
         if answer == "yes":
+            os.system('cls')
             oneb()
         elif answer == "no":
+            os.system('cls')
             onea()
 
 else:
