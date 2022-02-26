@@ -1,4 +1,2 @@
 user = "user"
-passwd = "user"
-root = "/"
-home = "/" + user
+passwd = "1"
