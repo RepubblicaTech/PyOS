@@ -8,5 +8,6 @@ while 3 > 2:
     pr = input(settings.user + "> ")
     if pr == "exit":
         os.system('cls')
+        os.system('Shell.py')
     else:
         print(pr)
