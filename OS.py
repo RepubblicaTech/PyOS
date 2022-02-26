@@ -9,7 +9,7 @@ if user_name == settings.user:
     password = input()
     if password == settings.passwd:
 
-        print("Welcome to the Developer Beta 4 of PyOS 0.1!")
+        print("Welcome to PyOS v0.1!")
         print("Type <help> to see available commands.")
         while 2 > 1:
             cwd = input(settings.user + "@pyos # ")
