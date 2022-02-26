@@ -36,5 +36,5 @@ if cwd == "help":
     print("")
     print("help         See available commands")
     print("print        Works like <echo> in Windows, opens the Print Shell")
-    print("")
+    print("update-check         Checks for updates, still doesn't update OS")
 
