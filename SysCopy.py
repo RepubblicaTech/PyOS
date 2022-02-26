@@ -1,11 +1,11 @@
 from tqdm import tqdm
 from time import sleep
-from pathlib import Path
+import os
 
 for i in tqdm(range(100), desc='Copying system files'):
     sleep(0.03)
 
-for i in tqdm(range(100), desc='Installing user-friendly'):
+for i in tqdm(range(100), desc='Installing required packages'):
     sleep(0.05)
 
 for i in tqdm(range(100), desc='Installing patches'):
@@ -25,5 +25,5 @@ for i in tqdm(range(100), desc='Setting up user'):
     sleep(0.02)
 
 print("")
-print("All done! Press Enter to close this window and open OS.py")
+print("All done! Press Enter to apply changes. Then open OS.py")
 input()
