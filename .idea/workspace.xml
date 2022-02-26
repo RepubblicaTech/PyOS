@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Preparing for public release...">
-      <change afterPath="$PROJECT_DIR$/Shell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OS.py" beforeDir="false" afterPath="$PROJECT_DIR$/OS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SysCopy.py" beforeDir="false" afterPath="$PROJECT_DIR$/SysCopy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.OS">
+  <component name="RunManager" selected="Python.Login">
     <configuration name="Install" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Github" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,7 +56,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="OS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Github" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,7 +68,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OS.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Vmix\Documents\Github\Login.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,7 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.OS" />
+        <item itemvalue="Python.Login" />
         <item itemvalue="Python.Install" />
       </list>
     </recent_temporary>

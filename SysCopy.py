@@ -22,5 +22,5 @@ for i in tqdm(range(100), desc='Setting up user'):
     sleep(0.02)
 
 print("")
-print("All done! Press Enter to apply changes. Then open OS.py")
+print("All done! Press Enter to apply changes. Then open Login.py")
 input()
