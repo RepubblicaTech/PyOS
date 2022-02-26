@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Preparing for public release...">
-      <change beforePath="$PROJECT_DIR$/OS.py" beforeDir="false" afterPath="$PROJECT_DIR$/OS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrShell.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrShell.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
