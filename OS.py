@@ -1,5 +1,4 @@
 import settings
-import os
 
 print("Welcome to PythonOS!")
 print("PythonOS login:")
@@ -9,12 +8,14 @@ if user_name == settings.user:
     print("Enter password:")
     password = input()
     if password == settings.passwd:
+
         print("Welcome to the Developer Beta 4 of PyOS 0.1!")
         print("Type <help> to see available commands.")
         while 2 > 1:
             cwd = input(settings.user + "@pyos # ")
 
         if cwd == "update":
+            import os
             os.system('pip install --upgrade pip')
             os.system('pip install --upgrade tqdm')
             os.system('pip install --upgrade pathlib')
