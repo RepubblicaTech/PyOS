@@ -19,7 +19,7 @@ else:
     print("Incorrect username. Quit and reopen OS.py")
     input("Press Enter key to quit...")
 
-if cwd == "update-check":
+if cwd == "update":
     os.system('pip install --upgrade pip')
     os.system('pip install --upgrade tqdm')
     os.system('pip install --upgrade pathlib')
@@ -34,5 +34,5 @@ if cwd == "help":
     print("")
     print("help         See available commands")
     print("print        Works like <echo> in Windows, opens the Print Shell")
-    print("update-check         Checks for updates, still doesn't update OS")
+    print("update       Checks for updates, still doesn't update OS")
 
