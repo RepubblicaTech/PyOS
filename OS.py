@@ -31,7 +31,7 @@ if cwd() == "print":
     print("Welcome to the Print Shell!")
     input(settings.user + "> ")
 
-if cwd == "help":
+if cwd() == "help":
     print("3 available commands:")
     print("")
     print("help         See available commands")
