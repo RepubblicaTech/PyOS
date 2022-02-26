@@ -21,14 +21,19 @@ else:
     print("Incorrect username. Quit and reopen OS.py")
     input("Press Enter key to quit...")
 
-if cwd == "start":
+if cwd() == "start":
     os.system('cls')
     print("The guide is being moved to the Github Wiki!")
     print("Go to this link: https://github.com/RepubblicaTech/PyOS/wiki")
 
-if cwd == "print":
+if cwd() == "print":
     print("Welcome to the Print Shell!")
     input(settings.user + "> ")
+    
 
-
+if cwd == "help":
+    print("3 available commands:")
+    print("")
+    print("help         See available commands")
+    print("print        Works like <echo> in Windows, opens the Print Shell")
 
