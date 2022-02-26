@@ -34,7 +34,6 @@ if user_name == settings.user:
                         cwd()
                 print(pr)
 
-
             if cwd == "help":
                 print("3 available commands:")
                 print("")
