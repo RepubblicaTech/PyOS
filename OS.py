@@ -33,7 +33,6 @@ if user_name == settings.user:
                             cwd = input(settings.user + "@pyos # ")
                 print(pr)
 
-
             if cwd == "help":
                 print("3 available commands:")
                 print("")
