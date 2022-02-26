@@ -10,8 +10,8 @@ if user_name == user:
     print("Enter password:")
     password = input()
     if password == settings.passwd:
-        print("Welcome to the Developer Beta 3 of PyOS 0.1!")
-        print("Type <start> (the only command available) to open the Start Guide!")
+        print("Welcome to the Developer Beta 4 of PyOS 0.1!")
+        print("Type <help> to see available commands.")
         cwd = input(settings.user + "@pyos # ")
     else:
         print("Incorrect password. Close this windows and reopen OS.py")
@@ -22,8 +22,12 @@ else:
 
 if cwd == "start":
     os.system('cls')
-    os.system('Guide.py')
+    print("The guide is being moved to the Github Wiki!")
+    print("Go to this link: https://github.com/RepubblicaTech/PyOS/wiki")
 
 if cwd == "print":
     print("Welcome to the Print Shell!")
     input(settings.user + "> ")
+
+
+
