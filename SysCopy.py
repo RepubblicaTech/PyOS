@@ -1,6 +1,5 @@
 from tqdm import tqdm
 from time import sleep
-import os
 
 for i in tqdm(range(100), desc='Copying system files'):
     sleep(0.03)
