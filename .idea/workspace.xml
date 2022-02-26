@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="A Little bugfix">
+    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Preparing for public release...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Install.py" beforeDir="false" afterPath="$PROJECT_DIR$/Install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OS.py" beforeDir="false" afterPath="$PROJECT_DIR$/OS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.Install">
+  <component name="RunManager" selected="Python.OS">
     <configuration name="Install" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Github" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Install" />
         <item itemvalue="Python.OS" />
+        <item itemvalue="Python.Install" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645886139796</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="A Little bugfix">
+      <created>1645890051554</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645890051554</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Preparing for public release...">
+      <created>1645890121327</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1645890121327</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +188,7 @@
     <MESSAGE value="Updating" />
     <MESSAGE value="Implementing Update-check" />
     <MESSAGE value="A Little bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="A Little bugfix" />
+    <MESSAGE value="Preparing for public release..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparing for public release..." />
   </component>
 </project>

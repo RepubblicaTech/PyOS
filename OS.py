@@ -12,7 +12,9 @@ if user_name == settings.user:
         print("Welcome to PyOS v0.1!")
         print("Type <help> to see available commands.")
         while 2 > 1:
-            cwd = input(settings.user + "@pyos # ")
+            def cwd():
+                input(settings.user + "@pyos # ")
+            cwd()
 
             if cwd == "update":
                 import os
@@ -23,8 +25,15 @@ if user_name == settings.user:
 
             if cwd == "print":
                 print("Welcome to the Print Shell!")
-                pr = input(settings.user + "> ")
+                print("Type EVERYTHING YOU WANT to print on the screen.")
+                print("Type <exit> to quit.")
+                while 3 > 2:
+                    pr = input(settings.user + "> ")
+
+                    if pr == "exit":
+                        cwd()
                 print(pr)
+
 
             if cwd == "help":
                 print("3 available commands:")
