@@ -11,9 +11,7 @@ if user_name == settings.user:
     if password == settings.passwd:
         print("Welcome to the Developer Beta 4 of PyOS 0.1!")
         print("Type <help> to see available commands.")
-
-        def cwd():
-            input(settings.user + "@pyos # ")
+        cwd = input(settings.user + "@pyos # ")
     else:
         print("Incorrect password. Close this windows and reopen OS.py")
         input()
@@ -21,17 +19,17 @@ else:
     print("Incorrect username. Quit and reopen OS.py")
     input("Press Enter key to quit...")
 
-if cwd() == "update-check":
+if cwd == "update-check":
     os.system('pip install --upgrade pip')
     os.system('pip install --upgrade tqdm')
     os.system('pip install --upgrade pathlib')
     os.system('pip install --upgrade requests')
 
-if cwd() == "print":
+if cwd == "print":
     print("Welcome to the Print Shell!")
     input(settings.user + "> ")
 
-if cwd() == "help":
+if cwd == "help":
     print("3 available commands:")
     print("")
     print("help         See available commands")
