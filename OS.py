@@ -23,7 +23,8 @@ if user_name == settings.user:
 
             if cwd == "print":
                 print("Welcome to the Print Shell!")
-                input(settings.user + "> ")
+                pr = input(settings.user + "> ")
+                print(pr)
 
             if cwd == "help":
                 print("3 available commands:")
