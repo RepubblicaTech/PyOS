@@ -29,7 +29,8 @@ if user_name == settings.user:
                     pr = input(settings.user + "> ")
 
                     if pr == "exit":
-                        cwd
+                        while 2 > 1:
+                            cwd = input(settings.user + "@pyos # ")
                 print(pr)
 
 
