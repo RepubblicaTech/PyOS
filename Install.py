@@ -3,6 +3,8 @@ import os
 
 print("Please wait, PyOS Installer is installing required packages...")
 time.sleep(0.5)
+print("")
+print("")
 
 os.system('pip install --upgrade pip')
 os.system('pip install tqdm')
