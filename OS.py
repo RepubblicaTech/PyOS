@@ -22,16 +22,7 @@ if user_name == settings.user:
                 os.system('pip install --upgrade requests')
 
             if cwd == "print":
-                print("Welcome to the Print Shell!")
-                print("Type EVERYTHING YOU WANT to print on the screen.")
-                print("Type <exit> to quit.")
-                while 3 > 2:
-                    pr = input(settings.user + "> ")
-
-                    if pr == "exit":
-                        while 2 > 1:
-                            cwd = input(settings.user + "@pyos # ")
-                print(pr)
+                os.system('PrShell.py')
 
             if cwd == "help":
                 print("3 available commands:")
