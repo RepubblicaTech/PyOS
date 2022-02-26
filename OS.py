@@ -11,7 +11,8 @@ if user_name == settings.user:
     if password == settings.passwd:
         print("Welcome to the Developer Beta 4 of PyOS 0.1!")
         print("Type <help> to see available commands.")
-        cwd = input(settings.user + "@pyos # ")
+        while 2 > 1:
+            cwd = input(settings.user + "@pyos # ")
     else:
         print("Incorrect password. Close this windows and reopen OS.py")
         input()
@@ -35,4 +36,5 @@ if cwd == "help":
     print("help         See available commands")
     print("print        Works like <echo> in Windows, opens the Print Shell")
     print("update       Checks for updates, still doesn't update OS")
+
 
