@@ -6,7 +6,7 @@ A simple Python OS (Still developing)
 Here is a little video with a tutorial and an overview of the OS:
 
 
-![video](https://user-images.githubusercontent.com/76620155/155878756-4e7c15f6-6438-48a2-b083-a5091d9c61e8.mp4)
+![Video](https://user-images.githubusercontent.com/76620155/155878756-4e7c15f6-6438-48a2-b083-a5091d9c61e8.mp4)
 
 
 
@@ -28,6 +28,6 @@ Opens the Print Shell:
 
 ### `update`
 
-Check for update, doesn't update the OS:
+Checks for updates, doesn't update the OS:
 
 ![immagine](https://user-images.githubusercontent.com/76620155/155878929-86fda394-4aa9-4438-97d2-2e17da097bb6.png)
