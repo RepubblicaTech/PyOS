@@ -1,6 +1,8 @@
 import settings
 import os
 
+print("Welcome")
+
 while 2 > 1:
     cwd = input(settings.user + "@pyos # ")
 
@@ -16,16 +18,18 @@ while 2 > 1:
         os.system('PrShell.py')
 
     if cwd == "help":
-        print("4 available commands:")
+        print("5 available commands:")
         print("")
         print("help         See available commands")
         print("print        Works like <echo> in Windows, opens the Print Shell")
         print("update       Checks for updates, still doesn't update OS")
         print("about        prints the system version")
+        print("exit         ends the PyOS process")
 
     if cwd == "about":
         os.system('cls')
         print("PyOS (or PythonOS) v0.1-update1")
+        print("")
         input("Press Enter key to exit...")
         os.system('cls')
 

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Preparing for public release...">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Implementing about box...">
       <change beforePath="$PROJECT_DIR$/Shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shell.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645890121327</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implementing about box...">
+      <created>1646472773039</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646472773039</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +202,7 @@
     <MESSAGE value="Implementing Update-check" />
     <MESSAGE value="A Little bugfix" />
     <MESSAGE value="Preparing for public release..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing for public release..." />
+    <MESSAGE value="Implementing about box..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing about box..." />
   </component>
 </project>
