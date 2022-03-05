@@ -1,7 +1,8 @@
 import settings
 import os
 
-print("Welcome")
+print("Welcome to PythonOS v0.1 Update 1!")
+print("Type <help> to see available commands.")
 
 while 2 > 1:
     cwd = input(settings.user + "@pyos # ")
@@ -28,6 +29,17 @@ while 2 > 1:
     if cwd == "about":
         os.system('cls')
         print("PyOS (or PythonOS) v0.1-update1")
+        print("")
+        print("##########################")
+        print("#                        #")
+        print("#                        #")
+        print("#                        #")
+        print("#                        #")
+        print("#                        #")
+        print("#                        #")
+        print("#                        #")
+        print("#                        #")
+        print("##########################")
         print("")
         input("Press Enter key to exit...")
         os.system('cls')
