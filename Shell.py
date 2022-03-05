@@ -11,7 +11,6 @@ while 2 > 1:
 
         os.system('pip install --upgrade pip')
         os.system('pip install --upgrade tqdm')
-        os.system('pip install --upgrade pathlib')
         os.system('pip install --upgrade requests')
 
     if cwd == "print":
@@ -23,8 +22,8 @@ while 2 > 1:
         print("help         See available commands")
         print("print        Works like <echo> in Windows, opens the Print Shell")
         print("update       Checks for updates, still doesn't update OS")
-        print("about        prints the system version")
-        print("exit         ends the PyOS process")
+        print("about        Prints the system version")
+        print("exit         Ends the PyOS process")
 
     if cwd == "about":
         os.system('cls')
