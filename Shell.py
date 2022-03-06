@@ -1,7 +1,7 @@
 import settings
 import os
 import colorama
-print("Welcome to PythonOS v0.1 Update 1!")
+print("Welcome to PythonOS v0.1.1")
 print("Type <help> to see available commands.")
 
 while 2 > 1:
