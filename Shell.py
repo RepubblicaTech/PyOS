@@ -16,7 +16,6 @@ while 2 > 1:
 
     if cwd == "print":
         os.system('PrShell.py')
-
     if cwd == "help":
         print("5 available commands:")
         print("")
@@ -29,9 +28,16 @@ while 2 > 1:
 
     if cwd == "about":
         os.system('cls')
-        print("PyOS (or PythonOS) v0.1.1")
+        print("PythonOS v0.1.1")
         print("")
         print("")
+        print("Press Enter key to exit...")
+        ee = input()
+        if ee == "sinbad":
+            os.system('cls')
+            print("You have found the Sindbad Easter egg!")
+            print("")
+            sind = open("C:\ANSI\DATA\MENU1.AMS", 'r')
 
     if cwd == "exit":
         quit()
