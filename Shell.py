@@ -23,7 +23,7 @@ while 2 > 1:
         print("print                Works like <echo> in Windows, opens the Print Shell")
         print("update               Checks for updates, still doesn't update OS")
         print("about                Prints the system version")
-        print("shutdown             Ends the PyOS process")
+        print("exit             Ends the PyOS process")
         print("<the hidden command> hint: POVERO GABBIANOOO!!!")
         print("")
 
