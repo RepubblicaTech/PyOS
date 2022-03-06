@@ -40,7 +40,7 @@ while 2 > 1:
             colorama.init()
             sindbad = open("ascii-art.ans", 'r')
             print(sindbad.read())
-            inpu
+            input("wait")
 
     if cwd == "exit":
         quit()
