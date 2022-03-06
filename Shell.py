@@ -17,7 +17,7 @@ while 2 > 1:
     if cwd == "print":
         os.system('PrShell.py')
     if cwd == "help":
-        print("5 available commands:")
+        print("6 available commands:")
         print("")
         print("help                 See available commands")
         print("print                Works like <echo> in Windows, opens the Print Shell")
