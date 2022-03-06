@@ -47,7 +47,8 @@ while 2 > 1:
         print("POVERO GABBIANOOO!!")
         print("HAI PERDUTO LA COMPAGNAAAA...")
         print("")
-
+        sindbad = open("", 'r')
+        print(sindbad.read())
 
     if cwd == "exit":
         quit()
