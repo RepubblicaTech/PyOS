@@ -38,9 +38,9 @@ while 2 > 1:
             print("You have found the Sindbad Easter egg!")
             print("")
             colorama.init()
-            sindbad = open("ascii-art.ans", 'r')
+            sindbad = open("art.txt", 'r')
             print(sindbad.read())
-            input("wait")
+            input("Press Enter key to exit...")
 
     if cwd == "exit":
         quit()
