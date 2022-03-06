@@ -25,6 +25,7 @@ while 2 > 1:
         print("update       Checks for updates, still doesn't update OS")
         print("about        Prints the system version")
         print("exit         Ends the PyOS process")
+        print("")
 
     if cwd == "about":
         os.system('cls')
