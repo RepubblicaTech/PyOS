@@ -23,7 +23,7 @@ while 2 > 1:
         print("print        Works like <echo> in Windows, opens the Print Shell")
         print("update       Checks for updates, still doesn't update OS")
         print("about        Prints the system version")
-        print("exit         Ends the PyOS process")
+        print("shutdown         Ends the PyOS process")
         print("")
 
     if cwd == "about":
@@ -41,5 +41,5 @@ while 2 > 1:
             print(sindbad.read())
             input("Press Enter key to exit...")
 
-    if cwd == "exit":
+    if cwd == "shutdown":
         quit()
