@@ -41,6 +41,7 @@ while 2 > 1:
             sindbad = open("ascii-art.txt", 'r')
             print(sindbad.read())
             input("Press Enter key to exit...")
+            os.system('cls')
 
     if cwd == "italy":
         os.system('cls')
@@ -49,6 +50,8 @@ while 2 > 1:
         print("")
         celeste = open("gianni.txt", 'r')
         print(celeste.read())
+        input("Press Enter key to exit...")
+        os.system('cls')
 
     if cwd == "exit":
         quit()
