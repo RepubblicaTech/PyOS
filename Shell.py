@@ -47,8 +47,8 @@ while 2 > 1:
         print("POVERO GABBIANOOO!!")
         print("HAI PERDUTO LA COMPAGNAAAA...")
         print("")
-        sindbad = open("", 'r')
-        print(sindbad.read())
+        celeste = open("gianni.txt", 'r')
+        print(celeste.read())
 
     if cwd == "exit":
         quit()
