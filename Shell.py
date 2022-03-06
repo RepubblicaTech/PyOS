@@ -19,11 +19,12 @@ while 2 > 1:
     if cwd == "help":
         print("5 available commands:")
         print("")
-        print("help         See available commands")
-        print("print        Works like <echo> in Windows, opens the Print Shell")
-        print("update       Checks for updates, still doesn't update OS")
-        print("about        Prints the system version")
-        print("shutdown         Ends the PyOS process")
+        print("help                 See available commands")
+        print("print                Works like <echo> in Windows, opens the Print Shell")
+        print("update               Checks for updates, still doesn't update OS")
+        print("about                Prints the system version")
+        print("shutdown             Ends the PyOS process")
+        print("<the hidden command> hint: POVERO GABBIANOOO!!!")
         print("")
 
     if cwd == "about":
@@ -33,13 +34,20 @@ while 2 > 1:
         print("")
         print("Press Enter key to exit...")
         ee = input()
-        if ee == "sinbad":
+        if ee == "sindbad":
             os.system('cls')
-            print("You have found the Sindbad Easter egg!")
+            print("You have unlocked the Sindbad Easter egg!")
             print("")
-            sindbad = open("art.txt", 'r')
+            sindbad = open("ascii-art.txt", 'r')
             print(sindbad.read())
             input("Press Enter key to exit...")
 
-    if cwd == "shutdown":
+    if cwd == "italy":
+        os.system('cls')
+        print("POVERO GABBIANOOO!!")
+        print("HAI PERDUTO LA COMPAGNAAAA...")
+        print("")
+
+
+    if cwd == "exit":
         quit()
