@@ -1,6 +1,6 @@
 import settings
 import os
-
+import colorama
 print("Welcome to PythonOS v0.1 Update 1!")
 print("Type <help> to see available commands.")
 
@@ -37,7 +37,9 @@ while 2 > 1:
             os.system('cls')
             print("You have found the Sindbad Easter egg!")
             print("")
-            sind = open("C:\ANSI\DATA\MENU1.AMS", 'r')
+            colorama.init()
+            sindbad = open("ascii-art.ans", 'r')
+            print(sindbad.read())
 
     if cwd == "exit":
         quit()
