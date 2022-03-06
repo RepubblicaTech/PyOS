@@ -28,7 +28,7 @@ while 2 > 1:
 
     if cwd == "about":
         os.system('cls')
-        print("PyOS (or PythonOS) v0.1-update1")
+        print("PyOS (or PythonOS) v0.1.1")
         print("")
         print("")
 
