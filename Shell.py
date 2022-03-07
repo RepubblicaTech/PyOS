@@ -13,11 +13,9 @@ while 2 > 1:
         os.system('pip install --upgrade pip')
         os.system('pip install --upgrade tqdm')
         os.system('pip install --upgrade requests')
-
-    if cwd == "print":
+    elif cwd == "print":
         os.system('PrShell.py')
-
-    if cwd == "help":
+    elif cwd == "help":
         print("6 available commands:")
         print("")
         print("help                 See available commands")
@@ -27,8 +25,7 @@ while 2 > 1:
         print("exit                 Ends the PyOS process")
         print("<the hidden command> hint: POVERO GABBIANOOO!!!")
         print("")
-
-    if cwd == "about":
+    elif cwd == "about":
         os.system('cls')
         print("PythonOS v0.1.1")
         print("")
@@ -50,8 +47,7 @@ while 2 > 1:
             print(sindbad.read())
             input("Press Enter key to exit...")
             os.system('cls')
-
-    if cwd == "italy":
+    elif cwd == "italy":
         os.system('cls')
         print("POVERO GABBIANOOO!!")
         print("HAI PERDUTO LA COMPAGNAAAA...")
@@ -60,6 +56,7 @@ while 2 > 1:
         print(celeste.read())
         input("Press Enter key to exit...")
         os.system('cls')
-
-    if cwd == "exit":
+    elif cwd == "exit":
         quit()
+    else:
+        print("Unknown command '" + cwd + "'. Type <help> to see available commands")
