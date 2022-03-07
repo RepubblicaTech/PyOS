@@ -6,7 +6,11 @@ A simple Python OS (Still developing)
 Here is a little video with a tutorial and an overview of the OS:
 
 
-![Video](https://user-images.githubusercontent.com/76620155/155878756-4e7c15f6-6438-48a2-b083-a5091d9c61e8.mp4)
+
+
+![Video](https://user-images.githubusercontent.com/76620155/157094664-a1ccc3ee-48f3-473e-8ec6-c10e899e2a6d.mp4)
+
+
 
 
 
