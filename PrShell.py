@@ -8,6 +8,12 @@ while 3 > 2:
     pr = input(settings.user + "> ")
     if pr == "quit":
         os.system('cls')
-        os.system('Shell.py')
+        print("WARNING : By exiting you'll quit from the Print Shell and PythonOS itself!")
+        print("Type <yes> to continue, anything else to cancel...")
+        a = input()
+        if a == "yes":
+            exit(0)
+        else:
+            pr
     else:
         print(pr)
