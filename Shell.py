@@ -43,7 +43,7 @@ while 2 > 1:
             os.system('cls')
             print("You have unlocked the Sindbad Easter egg!")
             print("")
-            sindbad = open("ascii-art.txt", 'r')
+            sindbad = open("sinbad.txt", 'r')
             print(sindbad.read())
             input("Press Enter key to exit...")
             os.system('cls')
