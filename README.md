@@ -18,20 +18,22 @@ Here is a little video with a tutorial and an overview of the OS:
 
 ### `help`
 
-Prints available commands:
-
-![immagine](https://user-images.githubusercontent.com/76620155/155878701-60d2e87a-ea2b-4766-82b2-5395d94ee7b9.png)
+Displays available commands.
 
 ### `print`
 
-Opens the Print Shell:
+Works like `echo` in Windows.
 
-(Works like `echo` in Windows)
+### `about`
 
-![immagine](https://user-images.githubusercontent.com/76620155/155878851-aba44139-2c9c-4433-806a-88624e7efcfe.png)
+Displays the about box of PythonOS.
+
+Easter egg included!
 
 ### `update`
 
-Checks for updates, doesn't update the OS:
+Checks for pip packages' updates, doesn't update the OS.
 
-![immagine](https://user-images.githubusercontent.com/76620155/155878929-86fda394-4aa9-4438-97d2-2e17da097bb6.png)
+### `<the hidden command>`
+
+Just a hidden command.
