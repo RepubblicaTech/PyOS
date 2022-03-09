@@ -12,7 +12,7 @@ os.system('pip install requests')
 time.sleep(0.3)
 os.system('cls')
 
-print("Welcome to PyOS v0.1 Installer!")
+print("Welcome to PyOS v0.1.3 Beta Installer!")
 print("You will configure the system for your needs.")
 print("")
 print("Enter username:")
