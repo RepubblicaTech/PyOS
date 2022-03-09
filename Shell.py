@@ -64,7 +64,7 @@ while 2 > 1:
     elif cwd == "ver":
         print("")
         print("PyOS V0.1.3-beta")
-        if platform.version() > "10.0.20000":
+        if platform.version() >= "10.0.21996":
             print("On Windows 11 build " + platform.version())
         else:
             print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
