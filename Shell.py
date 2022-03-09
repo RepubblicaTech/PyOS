@@ -1,7 +1,9 @@
+import sys
 import settings
 import os
+import platform
 
-print("Welcome to PythonOS v0.1.1")
+print("Welcome to PythonOS v0.1.3 Beta")
 print("Type <help> to see available commands.")
 
 while 2 > 1:
@@ -16,7 +18,7 @@ while 2 > 1:
     elif cwd == "print":
         os.system('PrShell.py')
     elif cwd == "help":
-        print("6 available commands:")
+        print("7 available commands:")
         print("")
         print("help                 See available commands")
         print("print                Works like <echo> in Windows, opens the Print Shell")
@@ -24,6 +26,7 @@ while 2 > 1:
         print("about                Prints the system version")
         print("exit                 Ends the PyOS process")
         print("<the hidden command> hint: POVERO GABBIANOOO!!!")
+        print("ver                  Prints the system version")
         print("")
     elif cwd == "about":
         os.system('cls')
@@ -58,5 +61,14 @@ while 2 > 1:
         os.system('cls')
     elif cwd == "exit":
         quit()
+    elif cwd == "ver":
+        print("")
+        print("PyOS V0.1.3-beta")
+        if platform.version() > "10.0.20000":
+            print("On Windows 11 build " + platform.version())
+        else:
+            print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
+        print("With Python " + platform.python_version())
+        print("")
     else:
         print("Unknown command '" + cwd + "'. Type <help> to see available commands")
