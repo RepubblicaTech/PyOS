@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="BugFixing...">
-      <change beforePath="$PROJECT_DIR$/Install.py" beforeDir="false" afterPath="$PROJECT_DIR$/Install.py" afterDir="false" />
-    </list>
+    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Updating and fixing..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -389,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646841183700</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Updating and fixing...">
+      <created>1646842353231</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1646842353231</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,6 +416,7 @@
     <MESSAGE value="Preparing for public release..." />
     <MESSAGE value="Implementing about box..." />
     <MESSAGE value="BugFixing..." />
-    <option name="LAST_COMMIT_MESSAGE" value="BugFixing..." />
+    <MESSAGE value="Updating and fixing..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating and fixing..." />
   </component>
 </project>
