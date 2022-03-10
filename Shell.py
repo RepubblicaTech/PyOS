@@ -15,8 +15,11 @@ while 2 > 1:
         os.system('pip install --upgrade pip')
         os.system('pip install --upgrade tqdm')
         os.system('pip install --upgrade requests')
+        os.system('pip install --upgrade pywin32')
+
     elif cwd == "print":
         os.system('PrShell.py')
+
     elif cwd == "help":
         print("7 available commands:")
         print("")
@@ -28,6 +31,7 @@ while 2 > 1:
         print("<the hidden command> hint: POVERO GABBIANOOO!!!")
         print("ver                  Prints the system version")
         print("")
+
     elif cwd == "about":
         os.system('cls')
         print("PythonOS v0.1.1")
@@ -50,6 +54,7 @@ while 2 > 1:
             print(sindbad.read())
             input("Press Enter key to exit...")
             os.system('cls')
+
     elif cwd == "italy":
         os.system('cls')
         print("POVERO GABBIANOOO!!")
@@ -59,13 +64,16 @@ while 2 > 1:
         print(celeste.read())
         input("Press Enter key to exit...")
         os.system('cls')
+
     elif cwd == "exit":
         quit()
+
     elif cwd == "ver":
         print("")
         print("PyOS V0.1.3-beta")
         print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
         print("With Python " + platform.python_version())
         print("")
+
     else:
         print("Unknown command '" + cwd + "'. Type <help> to see available commands")
