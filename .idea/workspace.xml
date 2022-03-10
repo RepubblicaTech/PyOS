@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Updating and fixing...">
-      <change beforePath="$PROJECT_DIR$/Install.py" beforeDir="false" afterPath="$PROJECT_DIR$/Install.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shell.py" afterDir="false" />
-    </list>
+    <list default="true" id="576231b2-b90b-40d2-8d2f-357a6eb01d69" name="Changes" comment="Updating and fixing..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
