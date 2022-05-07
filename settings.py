@@ -1,4 +1,4 @@
-user = "Python"
-passwd = "os"
+user = "root"
+passwd = "root"
 root = "/"
 home = "/" + user
