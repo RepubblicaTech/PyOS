@@ -38,6 +38,10 @@ Easter egg included!
 
 Checks for pip packages' updates, doesn't update the OS.
 
+### `ver`
+
+Same as <about>, but more detailed.
+
 ### `<the hidden command>`
 
 Just a hidden command.
