@@ -40,7 +40,7 @@ Checks for pip packages' updates, doesn't update the OS.
 
 ### `ver`
 
-Same as <about>, but more detailed.
+Same as `about`, but more detailed.
 
 ### `<the hidden command>`
 
