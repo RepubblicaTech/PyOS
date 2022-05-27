@@ -1,5 +1,4 @@
-# BIG WARNING: This OS is only compatible with Windows, the developer
-# is trying to convert Windows commands in scripts to Linux ones.
+# BIG WARNING: This OS is only compatible with Windows, the developer is trying to convert Windows commands in scripts to Linux ones.
 
 
 # PyOS
