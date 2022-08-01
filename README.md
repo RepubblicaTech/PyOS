@@ -1,5 +1,4 @@
-# BIG WARNING: This OS is only compatible with Windows, the developer is trying to add Linux commands in OS scripts over Windows ones.
-
+# WARNING: Due to file permission issues, Linux will never be supported by PyOS. Forking of this project is allowed to avoid these issues and introduce Linux support.
 
 # PyOS
 A simple Python OS (Still developing)
