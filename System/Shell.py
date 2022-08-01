@@ -76,7 +76,11 @@ while 2 > 1:
         print("PyOS v0.1.3-reset.1")
         print("Kernel version 0.2-beta.3")
         print("")
-        print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
+        win11 = 10.0.21996
+        if platform.version > :
+            print("On Windows 11 build " + platform.version)
+        else:
+            print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
         print("")
         print("With Python " + platform.python_version())
         print("")

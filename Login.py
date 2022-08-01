@@ -12,7 +12,7 @@ if user_name == settings.user:
     password = input()
     if password == settings.passwd:
         os.system('cls')
-        os.system('System\Shell.py')
+        os.system('cd System && Shell.py')
     else:
         print("Incorrect password. Close this windows and reopen Login.py")
         input()
