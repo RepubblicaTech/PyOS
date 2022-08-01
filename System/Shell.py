@@ -1,7 +1,7 @@
 import os
 import platform
+
 import settings
-import keyboard
 
 print("Welcome to PythonOS v0.1.3 Post-Reset Beta!")
 print("Type <help> to see available commands.")
@@ -17,7 +17,6 @@ while 2 > 1:
         os.system('pip install --upgrade tqdm')
         os.system('pip install --upgrade requests')
         os.system('pip install --upgrade pywin32')
-        os.system('pip install keyboard')
         print("")
 
     elif cwd == "print":
@@ -81,15 +80,6 @@ while 2 > 1:
         print("")
         print("With Python " + platform.python_version())
         print("")
-
-    elif cwd == "features":
-        print("Press f to see new features in this build, or press r to see all OS features:")
-        if keyboard.read_key() == "f":
-            os.system('cls')
-            print("New features:")
-            f = open("Features!.txt", "r")
-            print(f.read())
-            print("")
 
     else:
         print("Unknown command '" + cwd + "'. Type <help> to see available commands")

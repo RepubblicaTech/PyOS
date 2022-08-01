@@ -10,7 +10,6 @@ os.system('pip install --upgrade pip')
 os.system('pip install tqdm')
 os.system('pip install requests')
 os.system('pip install pywin32 --upgrade')
-os.system('pip install keyboard')
 time.sleep(0.3)
 os.system('cls')
 
