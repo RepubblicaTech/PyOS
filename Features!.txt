@@ -1,3 +1,5 @@
-- Fixed the Print Shell Bug
+- MORE optimized directory structure.
 
-- Optimized directory structure.
+- Implemented <clear>.
+
+- the secret command has been deleted.
