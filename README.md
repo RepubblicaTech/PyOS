@@ -40,9 +40,8 @@ Checks for pip packages' updates, doesn't update the OS.
 
 Same as `about`, but more detailed.
 
-### `settings`
+### `clear`
 
-Opens the settings menu.
+Clears the shell input.
 
-- Available settings:
-  - Change username and password
+(I think that this command should had to be implemented as the first one...)
