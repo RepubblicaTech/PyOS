@@ -1,16 +1,16 @@
+from ensurepip import version
 import os
+from System import user,version
 
-from System import settings
-
-print("Welcome to PythonOS v0.1.3 Post-Reset Beta 1!")
+print("Welcome to " + version.name_full + version.about + "!")
 print("PythonOS login:")
 user_name = input()
 
-if user_name == settings.user:
+if user_name == user.user:
     print("")
     print("Enter password:")
     password = input()
-    if password == settings.passwd:
+    if password == user.passwd:
         os.system('cls')
         os.system('cd System && Shell.py')
     else:

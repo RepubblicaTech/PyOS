@@ -1,13 +1,11 @@
-import os
-import platform
+from ensurepip import version
+import os,platform,user,version
 
-import settings
-
-print("Welcome to PythonOS v0.1.3 Post-Reset Beta!")
+print("Welcome to " + version.name_full + version.about + "!")
 print("Type <help> to see available commands.")
 
 while 2 > 1:
-    cwd = input(settings.user + "@pyos # ")
+    cwd = input(user.user + "@pyos # ")
 
     if cwd == "update":
         import os
@@ -20,23 +18,23 @@ while 2 > 1:
         print("")
 
     elif cwd == "print":
-        os.system('PrShell.py')
+        os.system('cd Software && PrShell.py')
+        os.system('cd ..')
 
     elif cwd == "help":
         print("7 available commands:")
         print("")
         print("help                 See available commands")
-        print("print                Works like <echo> in Windows, opens the Print Shell")
-        print("update               Checks for updates, still doesn't update OS")
-        print("about                Prints the system version")
-        print("exit                 Ends the PyOS process")
-        print("<the hidden command> hint: spaghetti country")
+        print("print                Works like <echo> in Windows, opens the Print Shell.")
+        print("update               Checks for pip packages updates, still doesn't update OS.")
+        print("about                Prints the system version.")
+        print("exit                 Ends the PyOS process.")
         print("ver                  Same as <about>, but more detailed.")
+        print("clear                Clears the shell input.")
         print("")
 
     elif cwd == "about":
-        os.system('cls')
-        print("PythonOS v0.1.3 Post-Reset Beta 1")
+        print(version.name_full + version.about)
         print("")
         print("Thanks to:")
         print("")
@@ -58,32 +56,21 @@ while 2 > 1:
             input("Press Enter key to exit...")
             os.system('cls')
 
-    elif cwd == "italy":
-        os.system('cls')
-        print("POVERO GABBIANOOO!!")
-        print("HAI PERDUTO LA COMPAGNAAAA...")
-        print("")
-        celeste = open("gianni.txt", 'r')
-        print(celeste.read())
-        input("Press Enter key to exit...")
-        os.system('cls')
-
     elif cwd == "exit":
         quit()
 
     elif cwd == "ver":
         print("")
-        print("PyOS v0.1.3-reset.1")
+        print(version.name + version.ver)
         print("Kernel version 0.2-beta.3")
         print("")
-        win11 = 10.0.21996
-        if platform.version > :
-            print("On Windows 11 build " + platform.version)
-        else:
-            print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
+        print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
         print("")
         print("With Python " + platform.python_version())
         print("")
+    
+    elif cwd == "clear":
+        os.system('cls')
 
     else:
         print("Unknown command '" + cwd + "'. Type <help> to see available commands")

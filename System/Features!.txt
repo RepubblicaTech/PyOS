@@ -1,3 +1,2 @@
-- Fixed the Print Shell Bug
-
-- Optimized directory structure.
+- Bugfixed Directory structure
+- Introduced a settings menu (to change username and password)

@@ -13,7 +13,7 @@ for i in tqdm(range(100), desc='Setting up environment'):
 for i in tqdm(range(100), desc='Setting up directory tree'):
     sleep(0.02)
 
-f = open("System\settings.py", "a")
+f = open("user.py", "a")
 f.write("root = " + '"/"' + "\n")
 f.write("home = " + '"/" + user' + "\n")
 

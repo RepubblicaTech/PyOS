@@ -40,6 +40,9 @@ Checks for pip packages' updates, doesn't update the OS.
 
 Same as `about`, but more detailed.
 
-### `<the hidden command>`
+### `settings`
 
-Just a hidden command.
+Opens the settings menu.
+
+- Available settings:
+  - Change username and password
