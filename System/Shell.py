@@ -13,8 +13,6 @@ while 2 > 1:
         print("")
         os.system('pip install --upgrade pip')
         os.system('pip install --upgrade tqdm')
-        os.system('pip install --upgrade requests')
-        os.system('pip install --upgrade pywin32')
         print("")
 
     elif cwd == "print":

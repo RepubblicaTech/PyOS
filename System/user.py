@@ -1,4 +1,4 @@
-user = "omar"
+user = "Omar"
 passwd = "omar"
 root = "/"
 home = "/" + user

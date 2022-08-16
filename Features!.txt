@@ -1,5 +1,1 @@
-- MORE optimized directory structure.
-
-- Implemented <clear>.
-
-- the secret command has been deleted.
+- Removed unused pip packages.
