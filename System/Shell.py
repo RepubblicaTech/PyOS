@@ -32,6 +32,7 @@ while 2 > 1:
         print("")
 
     elif cwd == "about":
+        print("")
         print(version.name_full + version.about)
         print("")
         print("Thanks to:")
@@ -44,7 +45,7 @@ while 2 > 1:
         print("")
         print("Press Enter key to exit...")
         ee = input()
-        os.system('cls')
+        print("")
         if ee == "sindbad":
             os.system('cls')
             print("You have unlocked the Sindbad Easter egg!")
@@ -60,7 +61,7 @@ while 2 > 1:
     elif cwd == "ver":
         print("")
         print(version.name + version.ver)
-        print("Kernel version 0.2-beta.3")
+        print("Kernel-" + version.krnl)
         print("")
         print("On " + platform.system() + " " + platform.release() + " build " + platform.version())
         print("")
