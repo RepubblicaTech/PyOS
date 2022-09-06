@@ -1,5 +1,7 @@
 # WARNING: Due to file permission issues, Linux will never be supported by PyOS. Forking of this project is allowed to avoid these issues and introduce Linux support.
 
+# WARNING (2): As I don't have a Mac OS system, i don't know how PyOS works on these OSs. Please report an Issue if it works or there are any bugs.
+
 # PyOS
 A simple Python OS (Still developing)
 
