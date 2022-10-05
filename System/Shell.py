@@ -4,8 +4,8 @@ import os,platform,user,version
 print("Welcome to " + version.name_full + version.about + "!")
 print("Type <help> to see available commands.")
 
-while 2 > 1:
-    cwd = input(user.user + "@pyos # ")
+while True:
+    cwd = input(user.user + "@pyos #> ")
 
     if cwd == "update":
         import os
@@ -24,6 +24,7 @@ while 2 > 1:
         print("")
         print("help                 See available commands")
         print("print                Works like <echo> in Windows, opens the Print Shell.")
+        print('echo                 As identical as to Windows and Unix: echo "some text here"')
         print("update               Checks for pip packages updates, still doesn't update OS.")
         print("about                Prints the system version.")
         print("exit                 Ends the PyOS process.")
@@ -70,6 +71,10 @@ while 2 > 1:
     
     elif cwd == "clear":
         os.system('cls')
+
+    elif "echo" in cwd:
+        ech = cwd.split("echo ")
+        print(ech[1])
 
     else:
         print("Unknown command '" + cwd + "'. Type <help> to see available commands")

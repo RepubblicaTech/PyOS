@@ -1,6 +1,2 @@
-Differences from v0.1.2-r3:
-
-
-- New command <clear>
-- Introduced a system compatibility checker (to check if Windows is being used or not)
-- removed unused pip packages.
+- Added ability to write text to a file in the Print Shell
+- New command: 'echo'
