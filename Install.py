@@ -1,7 +1,7 @@
 import time, os
 from System import version
 
-print("Please wait, " + version.name + "Installer is installing required packages...")
+print("Please wait, " + version.name_full + "Installer is installing required packages...")
 time.sleep(0.5)
 print("")
 print("")
