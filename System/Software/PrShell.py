@@ -1,11 +1,18 @@
-import os
+import json, os
 
-import user
+pyos_env = json.load(open("../users.json"))
+
+for pyos in pyos_env['PyOS_Env']:
+    
+    global username
+    global passwd
+    username = pyos["Username"]
+    passwd = pyos["Password"]
 
 print("Welcome to the Print Shell!")
 print("Type <help> for commands.")
 while True:
-    pr = input(user.user + "> ")
+    pr = input(str(username) + "> ")
     if pr == "quit":
         os.system('cls')
         exit(0)
@@ -14,14 +21,14 @@ while True:
         print("")
         print("quit                         Quit from the Print Shell")
         print('"text"->"file.ext"               Writes text to a file')
+        print("")
     elif "->" in pr:
         write = pr.split('->')
-        print(write)
 
         f = open(write[1], 'w')
         f.write(write[0] + "\n")
         f.close()
-        f = open(write[1], 'r')
-        print(f.read())
+
+        print("File saved in PyOS/System/Software/" + write[1] + '.')
     else:
         print(pr)
