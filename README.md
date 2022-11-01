@@ -26,7 +26,11 @@ Displays available commands.
 
 ### `print`
 
-Works like `echo` in Windows.
+Works like `echo` in Windows. Opens the Print Shell.
+
+### `echo`
+
+Just identical to Windows and Unix's `echo`. Now really.
 
 ### `about`
 
