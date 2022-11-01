@@ -16,6 +16,7 @@ while True:
         print("")
 
     elif cwd == "print":
+        os.system('cls')
         os.system('cd Software && PrShell.py')
         os.system('cd ..')
 
@@ -44,17 +45,6 @@ while True:
         print("YouTube")
         print("PyPl (for pip packages)")
         print("")
-        print("Press Enter key to exit...")
-        ee = input()
-        print("")
-        if ee == "sindbad":
-            os.system('cls')
-            print("You have unlocked the Sindbad Easter egg!")
-            print("")
-            sindbad = open("sinbad.txt", 'r')
-            print(sindbad.read())
-            input("Press Enter key to exit...")
-            os.system('cls')
 
     elif cwd == "exit":
         quit()
@@ -71,6 +61,12 @@ while True:
     
     elif cwd == "clear":
         os.system('cls')
+
+    elif "read" in cwd:
+        print("")
+        file = cwd.split("read ")
+        f = open(file[1], 'r')
+        print(f.read())
 
     elif "echo" in cwd:
         ech = cwd.split("echo ")
