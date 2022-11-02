@@ -26,9 +26,9 @@ print("Enter password (leave blank for none):")
 passwd = input()
 
 obj["PyOS_Env"] = [{"Username" : user, "Password" : passwd}]
-vm_json = open("System/user.json", "w")
+pyos_json = open("System/user.json", "w")
 
-json.dump(obj, vm_json)
+json.dump(obj, pyos_json)
 
 print("")
 os.system('cd System && SysCopy.py')
