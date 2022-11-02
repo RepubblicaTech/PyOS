@@ -1,2 +1,2 @@
-- Added ability to write text to a file in the Print Shell
-- New command: 'echo'
+- Replacing old user.py with user.json
+- New command
