@@ -1,16 +1,25 @@
-from ensurepip import version
-import os
-from System import user,version
+import os, json
+from System import version
 
 print("Welcome to " + version.name_full + version.about + "!")
 print("PythonOS login:")
 user_name = input()
 
-if user_name == user.user:
+global username, passwd
+username = ""
+passwd = ""
+
+pyos_env = json.load(open("System/user.json"))
+
+for pyos in pyos_env['PyOS_Env']:
+    username = pyos["Username"]
+    passwd = pyos["Password"]
+
+if user_name == username:
     print("")
     print("Enter password:")
     password = input()
-    if password == user.passwd:
+    if password == passwd:
         os.system('cls')
         os.system('cd System && Shell.py')
     else:

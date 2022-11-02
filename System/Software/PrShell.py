@@ -1,17 +1,18 @@
 import json, os
 
-pyos_env = json.load(open("../users.json"))
-
-for pyos in pyos_env['PyOS_Env']:
-    
-    global username
-    global passwd
-    username = pyos["Username"]
-    passwd = pyos["Password"]
-
 print("Welcome to the Print Shell!")
 print("Type <help> for commands.")
+
+global username
+username = ""
+
 while True:
+
+    pyos_env = json.load(open("../user.json"))
+
+    for pyos in pyos_env['PyOS_Env']:
+        username = pyos["Username"]
+
     pr = input(str(username) + "> ")
     if pr == "quit":
         os.system('cls')

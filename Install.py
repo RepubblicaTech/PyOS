@@ -1,5 +1,7 @@
-import time, os
+import time, os, json
 from System import version
+
+obj = {}
 
 print("Please wait, " + version.name_full + "Installer is installing required packages...")
 time.sleep(0.5)
@@ -17,23 +19,20 @@ print("")
 print("Enter username:")
 
 user = input()
-f = open("System/user.py", "w")
-f.write("user = " + '"' + str(user) + '"' + "\n")
-f.close()
+
+# f = open("System/user.py", "w")
+# f.write("user = " + '"' + str(user) + '"' + "\n")
+# f.close()
 
 print("")
 print("Enter password (leave blank for none):")
 
 passwd = input()
-if passwd == "":
-    f = open("System/user.py", "a")
-    f.write("passwd = " + '""' + "\n")
-    f.close()
-    print("")
-else:
-    f = open("System/user.py", "a")
-    f.write("passwd = " + '"' + str(passwd) + '"' + "\n")
-    f.close()
+
+obj["PyOS_Env"] = [{"Username" : user, "Password" : passwd}]
+vm_json = open("System/user.json", "w")
+
+json.dump(obj, vm_json)
 
 print("")
 os.system('cd System && SysCopy.py')

@@ -1,11 +1,23 @@
-from ensurepip import version
-import os,platform,user,version
+import os, platform, version, json
 
 print("Welcome to " + version.name_full + version.about + "!")
 print("Type <help> to see available commands.")
 
+global username, passwd
+username = ""
+passwd = ""
+
+
 while True:
-    cwd = input(user.user + "@pyos #> ")
+
+    
+    pyos_env = json.load(open("user.json"))
+
+    for pyos in pyos_env['PyOS_Env']:
+        username = pyos["Username"]
+        passwd = pyos["Password"]
+    
+    cwd = input(username + "@pyos #> ")
 
     if cwd == "update":
         import os
@@ -44,6 +56,9 @@ while True:
         print("The Stack Overflow Community")
         print("YouTube")
         print("PyPl (for pip packages)")
+        print("Setr0 (a schoolmate who helped me with JSON stuff)")
+        print("Links:")
+        print("Setr0's Github: https://github.com/Setr0")
         print("")
 
     elif cwd == "exit":
@@ -69,8 +84,7 @@ while True:
         print(f.read())
 
     elif "echo" in cwd:
-        ech = cwd.split("echo ")
-        print(ech[1])
+        print(str(cwd).replace("echo ", ""))
 
     else:
         print("Unknown command '" + cwd + "'. Type <help> to see available commands")
