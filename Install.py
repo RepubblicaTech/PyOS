@@ -20,10 +20,6 @@ print("Enter username:")
 
 user = input()
 
-# f = open("System/user.py", "w")
-# f.write("user = " + '"' + str(user) + '"' + "\n")
-# f.close()
-
 print("")
 print("Enter password (leave blank for none):")
 
