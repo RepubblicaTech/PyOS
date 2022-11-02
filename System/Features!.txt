@@ -1,2 +1,0 @@
-- Bugfixed Directory structure
-- Introduced a settings menu (to change username and password)
