@@ -51,3 +51,7 @@ Same as `about`, but more detailed.
 Clears the shell input.
 
 (I think that this command should had to be implemented as the first one...)
+
+# Thanks to:
+
+@Setr0 for the JSON authentication
