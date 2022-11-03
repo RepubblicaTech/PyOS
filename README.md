@@ -36,8 +36,6 @@ Just identical to Windows and Unix's `echo`. Now really.
 
 Displays the about box of PythonOS.
 
-Easter egg included!
-
 ### `update`
 
 Checks for pip packages' updates, doesn't update the OS.
