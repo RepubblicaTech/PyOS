@@ -1,4 +1,4 @@
-import json, os
+import json, platform, os
 
 print("Welcome to the Print Shell!")
 print("Type <help> for commands.")
@@ -15,7 +15,10 @@ while True:
 
     pr = input(str(username) + "> ")
     if pr == "quit":
-        os.system('cls')
+        if(platform.platform().__contains__("windows".lower())):
+            os.system('cls')
+        else:
+            os.system('clear')
         exit(0)
     elif pr == "help":
         print("2 commands available:")

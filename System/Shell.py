@@ -22,16 +22,26 @@ while True:
     if cwd == "update":
         import os
 
-        print("")
-        os.system('pip install --upgrade pip')
-        os.system('pip install --upgrade tqdm')
-        print("")
+        if(platform.platform().__contains__("windows".lower())):
+            print("")
+            os.system('pip install --upgrade pip')
+            os.system('pip install --upgrade tqdm')
+            print("")
+        else:
+            print("")
+            os.system('pip3 install --upgrade pip')
+            os.system('pip3 install --upgrade tqdm')
+            print("")
 
     elif cwd == "print":
-        os.system('cls')
-        os.system('cd Software && PrShell.py')
-        os.system('cd ..')
-
+        if(platform.platform().__contains__("windows".lower())):
+            os.system('cls')
+            os.system('cd Software && PrShell.py')
+            os.system('cd ..')
+        else:
+            os.system('clear')
+            os.system('cd Software && python3 PrShell.py')
+            os.system('cd ..')
     elif cwd == "help":
         print("7 available commands:")
         print("")
@@ -76,7 +86,10 @@ while True:
         print("")
     
     elif cwd == "clear":
-        os.system('cls')
+        if(platform.platform().__contains__("windows".lower())):
+            os.system('cls')
+        else:
+            os.system('clear')
 
     elif "read" in cwd:
         print("")
