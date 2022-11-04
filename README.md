@@ -36,8 +36,6 @@ Just identical to Windows and Unix's `echo`. Now really.
 
 Displays the about box of PythonOS.
 
-Easter egg included!
-
 ### `update`
 
 Checks for pip packages' updates, doesn't update the OS.
@@ -51,3 +49,7 @@ Same as `about`, but more detailed.
 Clears the shell input.
 
 (I think that this command should had to be implemented as the first one...)
+
+# Thanks to:
+
+![@Setr0](https://github.com/Setr0) for the JSON authentication
