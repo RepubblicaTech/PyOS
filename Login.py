@@ -1,4 +1,4 @@
-import os, json
+import os, json, platform
 from System import version
 
 print("Welcome to " + version.name_full + version.about + "!")
@@ -20,8 +20,12 @@ if user_name == username:
     print("Enter password:")
     password = input()
     if password == passwd:
-        os.system('cls')
-        os.system('cd System && Shell.py')
+        if(platform.platform().__contains__("windows".lower())):
+            os.system('cls')
+            os.system('cd System && Shell.py')
+        else:
+            os.system('clear')
+            os.system('cd System && python3 Shell.py')
     else:
         print("Incorrect password. Close this windows and reopen Login.py")
         input()
