@@ -3,13 +3,17 @@ from System import version
 
 obj = {}
 
-print("Please wait, " + version.name_full + "Installer is installing required packages...")
-time.sleep(0.5)
-print("")
-print("")
-
 os.system('python -m pip install --upgrade pip')
-os.system('pip install tqdm')
+
+try:
+    import tqdm
+except ImportError:
+    print("Please wait, " + version.name_full + "Installer is installing required packages...")
+    time.sleep(0.5)
+    print("")
+    print("")
+    os.system('pip install tqdm')
+
 time.sleep(0.3)
 os.system('cls')
 
