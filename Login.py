@@ -1,5 +1,7 @@
-import os, json, platform
+import os, json, sys
 from System import version
+
+system = sys.platform
 
 print("Welcome to " + version.name_full + version.about + "!")
 print("PythonOS login:")
@@ -20,10 +22,10 @@ if user_name == username:
     print("Enter password:")
     password = input()
     if password == passwd:
-        if(platform.platform().__contains__("windows".lower())):
+        if system == "win32" or system == "darwin":
             os.system('cls')
             os.system('cd System && Shell.py')
-        else:
+        elif system == "linux":
             os.system('clear')
             os.system('cd System && python3 Shell.py')
     else:

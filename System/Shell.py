@@ -1,4 +1,6 @@
-import os, platform, version, json
+import os, version, json, platform, sys
+
+system = sys.platform
 
 print("Welcome to " + version.name_full + version.about + "!")
 print("Type <help> to see available commands.")
@@ -22,26 +24,27 @@ while True:
     if cwd == "update":
         import os
 
-        if(platform.platform().__contains__("windows".lower())):
+        if system == "win32" or system == "darwin":
             print("")
             os.system('pip install --upgrade pip')
             os.system('pip install --upgrade tqdm')
             print("")
-        else:
+        elif system == "linux":
             print("")
             os.system('pip3 install --upgrade pip')
             os.system('pip3 install --upgrade tqdm')
             print("")
 
     elif cwd == "print":
-        if(platform.platform().__contains__("windows".lower())):
+        if system == "win32" or system == "darwin":
             os.system('cls')
             os.system('cd Software && PrShell.py')
             os.system('cd ..')
-        else:
+        elif system == "linux":
             os.system('clear')
             os.system('cd Software && python3 PrShell.py')
             os.system('cd ..')
+
     elif cwd == "help":
         print("7 available commands:")
         print("")
@@ -86,9 +89,9 @@ while True:
         print("")
     
     elif cwd == "clear":
-        if(platform.platform().__contains__("windows".lower())):
+        if system == "win32":
             os.system('cls')
-        else:
+        elif system == "linux" or system == "darwin":
             os.system('clear')
 
     elif "read" in cwd:

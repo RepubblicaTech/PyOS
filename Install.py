@@ -1,5 +1,7 @@
-import time, os, json, platform
+import time, os, json, sys
 from System import version
+
+system = sys.platform
 
 obj = {}
 
@@ -8,16 +10,16 @@ time.sleep(0.5)
 print("")
 print("")
 
-if(platform.platform().__contains__("windows".lower())):
+if system == "win32" or system == "darwin":
     os.system('python -m pip install --upgrade pip')
     os.system('pip install tqdm')
     time.sleep(0.3)
     os.system('cls')
-else:
+elif system == "linux":
     os.system('python3 -m pip install --upgrade pip')
     os.system('pip3 install tqdm')
     time.sleep(0.3)
-    os.system('cls')
+    os.system('clear')
 
 print("Welcome to " + version.name + version.about + " Installer!")
 print("You will configure the system for your needs.")
@@ -38,7 +40,7 @@ json.dump(obj, pyos_json)
 
 print("")
 
-if(platform.platform().__contains__("windows".lower())):
+if system == "win32" or system == "darwin":
     os.system('cd System && SysCopy.py')
-else:
+elif system == "linux":
     os.system('cd System && python3 SysCopy.py')

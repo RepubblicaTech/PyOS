@@ -1,4 +1,6 @@
-import json, platform, os
+import json, os, sys
+
+system = sys.platform
 
 print("Welcome to the Print Shell!")
 print("Type <help> for commands.")
@@ -15,9 +17,9 @@ while True:
 
     pr = input(str(username) + "> ")
     if pr == "quit":
-        if(platform.platform().__contains__("windows".lower())):
+        if system == "win32":
             os.system('cls')
-        else:
+        elif system == "linux" or system == "darwin":
             os.system('clear')
         exit(0)
     elif pr == "help":
