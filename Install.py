@@ -1,5 +1,6 @@
 import time, os, json
 from System import version
+from System.Software.Libs import pip
 
 obj = {}
 
@@ -12,7 +13,10 @@ except ImportError:
     time.sleep(0.5)
     print("")
     print("")
-    os.system('pip install tqdm')
+    try:
+        import tqdm
+    except ImportError:
+        pip.install('tqdm')
 
 time.sleep(0.3)
 os.system('cls')
