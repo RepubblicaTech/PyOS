@@ -1,5 +1,3 @@
-# This is the Linux branch of PythonOS. Will be used for Linux implementation of the PyOS code. 
-
 # PyOS
 A simple Python OS (Still developing)
 
