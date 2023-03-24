@@ -1,3 +1,5 @@
+# ALERT: My code has been forked by a user called 15642875149. Don't download my code for him, it may have malicious code inside!! 
+
 # PyOS
 A simple Python OS (Still developing)
 
