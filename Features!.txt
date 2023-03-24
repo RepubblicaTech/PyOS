@@ -1,2 +1,0 @@
-- Replacing old user.py with user.json
-- New command
