@@ -50,4 +50,4 @@ Clears the shell input.
 
 # Thanks to:
 
-![@Setr0](https://github.com/Setr0) for the JSON authentication
+![@Setr0](https://github.com/Setr0) for the JSON authentication and his help for code troubleshooting
