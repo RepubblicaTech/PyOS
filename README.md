@@ -1,20 +1,13 @@
 # SECURITY ALERT: My code has been forked by a user called 15642875149. Don't download my code from him, it may have malicious code inside!! 
 
 # PyOS
-A simple Python OS (Still developing)
+A simple Python OS. 99,9% using Python (almost no `os.system()` )
 
 ## PyOS Tutorial
 
 Here is a little video with a tutorial and an overview of the OS:
 
-
-
-
 ![Video](https://user-images.githubusercontent.com/76620155/157094664-a1ccc3ee-48f3-473e-8ec6-c10e899e2a6d.mp4)
-
-
-
-
 
 ## Commands
 
