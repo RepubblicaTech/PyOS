@@ -22,7 +22,6 @@ class PreBoot:
         else:
             print("All required packages found.")
             return True
-        
 
     def CheckOSIntegrity(self):
         self.requiredDirs = ['OS/Boot', 'Recovery']
