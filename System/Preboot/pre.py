@@ -13,13 +13,12 @@ class PreBoot:
 
         for pkg in self.requiredPkgs:
             self.activityOne = chk.Check()
-            self.activityOne.checkPackages(package=pkg)
-            
-            if self.activityOne.checkPackages() == True:
+            if self.activityOne.checkPackages(package=pkg) == True:
                 self.found += 1
             
         if self.found < 3:
             print("Error PxC001: Cannot start PythonOS.\nThere are less or no packages installed than required (pip, tqdm, wget)")
+            exit(1)
         else:
             print("All required packages found.")
             return True

@@ -1,4 +1,8 @@
 from System.Preboot import pre, chk
+
+prCheck = pre.PreBoot()
+prCheck.checkPkgs()
+
 from System.OS.Boot import boot
 from System import install
 import time, os
