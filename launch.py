@@ -17,9 +17,6 @@ else:
     time.sleep(1.5) 
     Install = install.Setup()
 
-time.sleep(1)
-prCheck = pre.PreBoot()
-
 time.sleep(0.3)
 
 files = ['System/users.json', 'System/OS/Shell/main.py']

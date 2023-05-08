@@ -18,6 +18,7 @@ class PreBoot:
             
         if self.found < 3:
             print("Error PxC001: Cannot start PythonOS.\nThere are less or no packages installed than required (pip, tqdm, wget)")
+            time.sleep(1)
             exit(1)
         else:
             print("All required packages found.")
