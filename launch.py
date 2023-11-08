@@ -1,8 +1,4 @@
 from System.Preboot import pre, chk
-
-prCheck = pre.PreBoot()
-prCheck.checkPkgs()
-
 from System.OS.Boot import boot
 from System import install
 import time, os
@@ -16,6 +12,9 @@ else:
     print("Error PxJ001: users.json is missing, booting into installer...")
     time.sleep(1.5) 
     Install = install.Setup()
+
+time.sleep(1)
+prCheck = pre.PreBoot()
 
 time.sleep(0.3)
 

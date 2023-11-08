@@ -115,5 +115,4 @@ dmypy.json
 
 # Files from RepubblicaTech
 .DS_Store
-Makefile
 System/users.json
