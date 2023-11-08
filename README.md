@@ -1,5 +1,5 @@
 # PyOS
-A simple Python OS. 99,9% using Python (almost no `os.system()` )
+A simple Python OS. 99,9% using Python (almost no `os.system()` stuff)
 
 ## PyOS Tutorial
 
