@@ -1,5 +1,6 @@
 from System.Preboot import pre, chk
 from System.OS.Boot import boot
+from System.Recovery import recover
 from System import install
 import time, os
 
@@ -11,7 +12,7 @@ if os.path.isfile('System/users.json'):
 else:
     print("Error PxJ001: users.json is missing, booting into installer...")
     time.sleep(1.5) 
-    Install = install.Setup()
+    Install = install.Setup() # if user not present, boot innto installer
 
 time.sleep(1)
 prCheck = pre.PreBoot()
@@ -30,8 +31,9 @@ if (prCheck.checkPkgs() == True and prCheck.CheckOSIntegrity() == True):
     time.sleep(1)
     pass
 else:
-    print("Error PxC001: Something went wrong. Please check all the errors to solve them.")
-    exit(0)
+    print("Error PxC001: Something went wrong. Booting to recovery mode...")
+    time.sleep(1)
+    recovery = recover.RecoveryMode()
 
 # Check if essential system files exist
 
@@ -46,4 +48,5 @@ if foundFiles == 2:
     environment = boot.Boot()
 else:
     print("Error BxC001: Some system files are missing. Booting into Recovery mode...")
-    exit(0)
+    time.sleep(1)
+    recovery = recover.RecoveryMode()

@@ -116,3 +116,4 @@ dmypy.json
 # Files from RepubblicaTech
 .DS_Store
 System/users.json
+.vscode

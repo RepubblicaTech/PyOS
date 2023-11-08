@@ -16,7 +16,7 @@ class Setup:
         exit(0)
         
     def warning(self):
-        print("WARNING: THIS IS A STRIPPED-DOWN VERSION OF PYTHONOS,\nITS USE IS FOR TESTING PURPOSES ONLY.")
+        print("WARNING: THIS IS A STRIPPED-DOWN VERSION OF PYTHONOS,\nUSE THIS FOR TESTING PURPOSES ONLY.")
 
     def configuration(self):
         self.username = input("Enter your username: ")
