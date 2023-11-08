@@ -1,3 +1,5 @@
+# THIS BRANCH IS VERY FREQUENTLY UPDATED, it might contain unstable code. To use a stable version of PythonOS, check out the `main` branch (or the latest stable release)
+
 # PyOS
 A simple Python OS. 99,9% using Python (almost no `os.system()` stuff)
 
