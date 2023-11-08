@@ -1,4 +1,5 @@
-# This is the Linux branch of PythonOS. Will be used for Linux implementation of the PyOS code. 
+# This is the Linux branch of PythonOS. Will be used for Linux implementation of the PyOS code (obsolete).
+# November 2023 note: this branch may be deleted if code from `main` will work on UNIX systems
 
 # PyOS
 A simple Python OS (Still developing)
