@@ -1,5 +1,3 @@
-# SECURITY ALERT: My code has been forked by a user called 15642875149. Don't download my code from him, it may have malicious code inside!! 
-
 # PyOS
 A simple Python OS. 99,9% using Python (almost no `os.system()` )
 
