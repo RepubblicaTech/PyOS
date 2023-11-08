@@ -7,7 +7,7 @@ print("Starting up...")
 time.sleep(1)
 
 if os.path.isfile('System/users.json'):
-    pass
+    pass                    # if user coniguration is present, boot into OS
 else:
     print("Error PxJ001: users.json is missing, booting into installer...")
     time.sleep(1.5) 
