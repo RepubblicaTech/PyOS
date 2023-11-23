@@ -1,4 +1,4 @@
-# THIS BRANCH IS VERY FREQUENTLY UPDATED, it might contain unstable code. To use a stable version of PythonOS, check out the `main` branch (or the latest stable release)
+# THIS BRANCH IS VERY FREQUENTLY UPDATED, it might contain non-working code. To use a stable version of PythonOS, check out the `main` branch (or the latest stable release)
 
 # PyOS
 A simple Python OS. 99,9% using Python (almost no `os.system()` stuff)
@@ -15,31 +15,9 @@ Here is a little video with a tutorial and an overview of the OS:
 
 Displays available commands.
 
-### `print`
+### `exit`
 
-Works like `echo` in Windows. Opens the Print Shell.
-
-### `echo`
-
-Just identical to Windows and Unix's `echo`. Now really.
-
-### `about`
-
-Displays the about box of PythonOS.
-
-### `update`
-
-Checks for pip packages' updates, doesn't update the OS.
-
-### `ver`
-
-Same as `about`, but more detailed.
-
-### `clear`
-
-Clears the shell input.
-
-(I think that this command should had to be implemented as the first one...)
+exit.
 
 # Thanks to:
 
