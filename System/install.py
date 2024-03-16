@@ -1,5 +1,12 @@
-from tqdm import tqdm
 import time, json
+
+try:
+    from tqdm import tqdm
+except ImportError:
+    print("Package tqdm is not installed. Quitting...")
+    time.sleep(1)
+    exit(1)
+
 
 class Setup:
     def __init__(self):
