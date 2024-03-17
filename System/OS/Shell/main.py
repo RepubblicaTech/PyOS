@@ -14,7 +14,7 @@ class Shell:
             print("\nhelp                     Simply help.")
             print("exit                     Quits from the PythonOS environment.\n")
         elif command == "ver":
-            print(f"pyos-v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
+            print(f"pyos-v{self.sysVersionVars.version_semantic}_k{self.sysVersionVars.kernel}")
             if ("beta" in self.sysVersionVars.version_semantic) or ("alpha" in self.sysVersionVars.version_semantic):
                 print(f"Codename \"{self.sysVersionVars.codename}\"")
         elif command == "":
