@@ -7,7 +7,18 @@ import time, os
 print("Starting up...")
 time.sleep(1)
 
-if os.path.isfile('System/users.json'):
+# print(os.getcwd())
+
+if(os.getcwd() == "C:\\Windows\\system32"):
+    print("Due to some issues with double-clicking the launch.py,\nyou must start PythonOS from a terminal window in the PyOS directory.\nPress Enter to Exit.")
+    input()
+    exit(2)
+else:
+    pass
+
+chkFiles = chk.Check()
+
+if chkFiles.checkIntegrity('System/users.json'):
     pass                    # if user coniguration is present, boot into OS
 else:
     print("Error PxJ001: users.json is missing, booting into installer...")
@@ -38,7 +49,6 @@ else:
 # Check if essential system files exist
 
 for File in files:
-    chkFiles = chk.Check()
     if chkFiles.checkIntegrity(file=File) == True:
         foundFiles += 1
 
