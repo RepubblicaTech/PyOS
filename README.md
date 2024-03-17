@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # THIS BRANCH IS VERY FREQUENTLY UPDATED, it might contain non-working code. To use a stable version of PythonOS, check out the `main` branch (or the latest stable release)
+=======
+# This is the Linux branch of PythonOS. Will be used for Linux implementation of the PyOS code (obsolete).
+# November 2023 note: this branch may be deleted if code from `main` will work on UNIX systems
+>>>>>>> origin/linux
 
 # PyOS
 A simple Python OS. 99,9% using Python (almost no `os.system()` stuff)
