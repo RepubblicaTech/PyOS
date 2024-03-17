@@ -1,0 +1,10 @@
+{
+    "PyOS" : [
+    {
+        "system_version": "0.2 Alpha",
+        "system_semantic": "0.2-alpha",
+        "system_codename": "Version Next",
+        "kernel_version": "1.0"
+    }
+    ]
+}

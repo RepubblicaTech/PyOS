@@ -9,8 +9,6 @@ class PreBoot:
         self.requiredPkgs = ['pip', 'tqdm', 'wget']
         self.found = 0
 
-        time.sleep(0.3)
-
         for pkg in self.requiredPkgs:
             self.activityOne = chk.Check()
             self.activityOne.checkPackages(package=pkg)
@@ -29,19 +27,15 @@ class PreBoot:
         self.requiredDirs = ['OS/Boot', 'Recovery']
         self.foundDirs = 0
 
-        time.sleep(0.3)
-
         for dir in self.requiredDirs:
             if os.path.isdir(f'System/{dir}') == True:
                 self.foundDirs += 1
                 print(f"Found directory 'System/{dir}'.")
-                time.sleep(0.3)
             
             else:
                 print(f"Error PxC002: Directory '{dir}' is missing")
 
         if self.foundDirs == 2:
             print("All required directories found.")
-            time.sleep(1)
         
         return True
