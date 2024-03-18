@@ -6,7 +6,8 @@ except ImportError:
     print("Package tqdm is not installed. Installing...")
     time.sleep(1)
     pip.install('tqdm')
-    exit(1)
+    input("\nPackage tqdm has been installed successfully. Please quit the installer by pressing Enter and reopen launch.py.")
+    exit(0)
 
 
 class Setup:

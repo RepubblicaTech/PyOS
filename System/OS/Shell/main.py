@@ -1,5 +1,6 @@
 import System.OS.Software.ver as ver
 import System.OS.Software.PrShell as prsh
+import json
 
 class Shell:
     def __init__(self, username):
@@ -12,11 +13,12 @@ class Shell:
         if command == "exit":
             exit(0)
         elif command == "help":
-            print("\nhelp                     Simply help.")
-            print("exit                     Quits from the PythonOS environment.\n")
+            with open('System/OS/Shell/commands.json') as cmdJSON:
+                self.jsonData = json.load(cmdJSON)
+                print(self.jsonData['PyOS_Commands'])
         elif command == "ver":
-            print(f"pyos-v{self.sysVersionVars.version_semantic}_k{self.sysVersionVars.kernel}")
-            if ("beta" in self.sysVersionVars.version_semantic) or ("alpha" in self.sysVersionVars.version_semantic):
+            print(f"pyos-v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
+            if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
                 print(f"Codename \"{self.sysVersionVars.codename}\"")
         elif command == "prsh":
             PrSHSession = prsh.PrintShell(username)
