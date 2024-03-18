@@ -2,7 +2,7 @@
     "PyOS" : [
     {
         "system_version": "0.2 Alpha 2",
-        "system_semantic": "0.2-alpha.2",
+        "system_semantic": "0.2.a2",
         "system_codename": "Version Next",
         "kernel_version": "1.0a"
     }
