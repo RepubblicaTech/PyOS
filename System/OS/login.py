@@ -26,4 +26,4 @@ class Login:
             print('Error LxV001: Either username or password are incorrect. Check users.json for credentials.')
             exit(0)
 
-        session = main.Shell()
+        session = main.Shell(self.uname)
