@@ -5,7 +5,7 @@ import System.Preboot.chk as chk
 
 class PreBoot:
 
-    def checkPkgs(self):
+    def checkPkgs(self) -> bool:
         self.requiredPkgs = ['pip', 'tqdm', 'wget']
         self.found = 0
 
@@ -17,13 +17,12 @@ class PreBoot:
                 self.found += 1
             
         if self.found < 3:
-            print("Error PxC001: Cannot start PythonOS.\nThere are less or no packages installed than required (pip, tqdm, wget)")
+            return False
         else:
             print("All required packages found.")
             return True
-        
 
-    def CheckOSIntegrity(self):
+    def CheckOSIntegrity(self) -> bool:
         self.requiredDirs = ['OS/Boot', 'Recovery']
         self.foundDirs = 0
 
@@ -31,11 +30,9 @@ class PreBoot:
             if os.path.isdir(f'System/{dir}') == True:
                 self.foundDirs += 1
                 print(f"Found directory 'System/{dir}'.")
-            
-            else:
-                print(f"Error PxC002: Directory '{dir}' is missing")
 
         if self.foundDirs == 2:
             print("All required directories found.")
-        
-        return True
+            return True
+        else:
+            return False

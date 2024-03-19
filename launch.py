@@ -19,9 +19,6 @@ else:
 
 chkFiles = chk.Check()
 
-errorHandle = errHandler.Crash('AlphaTestErrors', 'AxET001')
-
-
 if chkFiles.checkIntegrity('System/users.json'):
     pass                    # if user coniguration is present, boot into OS
 else:
@@ -30,8 +27,6 @@ else:
 
 prCheck = pre.PreBoot()
 
-files = ['System/users.json', 'System/OS/Shell/main.py']
-foundFiles = 0
 
 '''
 Call the PKG_CHECK routine, then
@@ -44,10 +39,12 @@ if (prCheck.checkPkgs() == True and prCheck.CheckOSIntegrity() == True):
     print("You're good to go! Booting into PyOS...")
     pass
 else:
-    print("Error PxC001: Something went wrong. Booting to recovery mode...")
+    osIntegrityError = errHandler.Crash('preBoot', 'PxC001')
     recovery = recover.RecoveryMode()
 
 # Check if essential system files exist
+files = ['System/users.json', 'System/OS/Shell/main.py']
+foundFiles = 0
 
 for File in files:
     if chkFiles.checkIntegrity(file=File) == True:
@@ -57,5 +54,5 @@ if foundFiles == 2:
     print("System files found. Starting environment...")
     environment = boot.Boot()
 else:
-    print("Error PBxC001: Some system files are missing. Booting into Recovery mode...")
+    missingFilesError = errHandler.Crash('preBoot', 'PBxC001')
     recovery = recover.RecoveryMode()

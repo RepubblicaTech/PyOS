@@ -1,4 +1,6 @@
-import json, System.Preboot.chk as chk, System.OS.Shell.main as main
+import json
+import System.Preboot.chk as chk, System.OS.Shell.main as main
+from System.OS.libs import errHandler
 
 class Login:
     def __init__(self, loginData='users.json'):
@@ -20,10 +22,9 @@ class Login:
         if passw == self.passwd and uname == self.username:
             systemDirCheck = chk.Check()
             if systemDirCheck.checkDir('System/OS/Shell') == False:
-                print("Error LxL001: Shell environment not found. Make sure you have downloaded the full PythonOS package")
-            
+                missingShellError = errHandler.Crash('Login', 'LxL001')
         else:
-            print('Error LxL002: Either username or password are incorrect. Check users.json for credentials.')
+            incorrectCredentialsError = errHandler.Crash('Login', 'LxL002')
             exit(0)
 
         session = main.Shell(self.uname)

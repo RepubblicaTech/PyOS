@@ -27,7 +27,7 @@
         },
 
         {   "code": "LxL002",
-            "desc": "Error LxL002: Either username or password are incorrect. Check users.json for credentials."
+            "desc": "Either username or password are incorrect. Check System/users.json for credentials."
         }
     ]
 }
