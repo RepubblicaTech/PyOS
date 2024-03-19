@@ -7,23 +7,33 @@ class Login:
 
         self.username = ""
         self.passwd = ""
+        self.user = ""
+        self.password = ""
     
         self.pyos_env = json.load(open(loginData))
 
         for pyos in self.pyos_env['PyOS_Env']:
             self.username = pyos["Username"]
             self.passwd = pyos["Password"]
+        
+        self.user = input("Enter your username: ")
+        self.password = input(f"Enter {self.user}'s password: ")
 
-        self.uname = input("Enter your username: ")
-        self.password = input(f"Enter {self.uname}'s password: ")
-        Login.loginValidation(self, uname=self.uname, passw=self.password)
+        while (self.loginValidation(self.user, self.password) == False):
+            errHandler.Crash('Login', 'LxL002')
+            self.user = input("Enter your username: ")
+            self.password = input(f"Enter {self.user}'s password: ")
+        
+        session = main.Shell(self.user)
 
-    def loginValidation(self, uname, passw):
+    def loginValidation(self, uname, passw) -> bool:
         if passw == self.passwd and uname == self.username:
             systemDirCheck = chk.Check()
             if systemDirCheck.checkDir('System/OS/Shell') == False:
                 missingShellError = errHandler.Crash('Login', 'LxL001')
+                exit(1)
         else:
-            incorrectCredentialsError = errHandler.Crash('Login', 'LxL002')
-
-        session = main.Shell(self.uname)
+            return False
+        
+        return True
+        # session = main.Shell(self.uname)

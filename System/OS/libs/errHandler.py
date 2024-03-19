@@ -11,8 +11,6 @@ class Crash:
             if (error['code'] == errorCode):
                 print(f'Error {error['code']}: {error['desc']}')
 
-        exit(1)
-
 
     def checkBootPhase(self, Phase) -> int:
         i: int = 0
@@ -22,4 +20,4 @@ class Crash:
         if (i >= 1):
             return i
         else:
-            return (not i)
+            return (not i)  
