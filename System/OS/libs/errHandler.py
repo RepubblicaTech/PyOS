@@ -9,11 +9,11 @@ class Crash:
         self.errorsJson = json.load(open('System/OS/libs/errors.json'))
         for error in self.errorsJson[Phase]:
             if (error['code'] == errorCode):
-                print(error['desc'])
+                print(f'Error {error['code']}: {error['desc']}')
         
     def halt() -> int:
-        input("Unable to analyse error. System will stop initializing. Press Enter to quit.")
-        return 1
+        input("Unable to analyze error. System will stop initializing. Press Enter to quit.")
+        exit(1)
 
     def checkBootPhase(self, Phase) -> int:
         i: int = 0

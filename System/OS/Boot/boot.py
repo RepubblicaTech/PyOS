@@ -8,4 +8,3 @@ def detectFiles(file='main.py'):
 class Boot:
     def __init__(self):
         self.login = login.Login(loginData='System/users.json')
-        

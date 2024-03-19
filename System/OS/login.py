@@ -20,10 +20,10 @@ class Login:
         if passw == self.passwd and uname == self.username:
             systemDirCheck = chk.Check()
             if systemDirCheck.checkDir('System/OS/Shell') == False:
-                print("Error LxC001: Shell environment non found. Make sure you have downloaded the official Release of PythonOS")
+                print("Error LxL001: Shell environment not found. Make sure you have downloaded the full PythonOS package")
             
         else:
-            print('Error LxV001: Either username or password are incorrect. Check users.json for credentials.')
+            print('Error LxL002: Either username or password are incorrect. Check users.json for credentials.')
             exit(0)
 
         session = main.Shell(self.uname)

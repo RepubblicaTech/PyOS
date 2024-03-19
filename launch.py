@@ -33,9 +33,12 @@ prCheck = pre.PreBoot()
 files = ['System/users.json', 'System/OS/Shell/main.py']
 foundFiles = 0
 
-# Call the PKG_CHECK routine, then
-# Check system integrity.
-# Then boot if there are no problems
+'''
+Call the PKG_CHECK routine, then
+Check system integrity.
+Then boot if there are no problems
+
+'''
 
 if (prCheck.checkPkgs() == True and prCheck.CheckOSIntegrity() == True):
     print("You're good to go! Booting into PyOS...")
