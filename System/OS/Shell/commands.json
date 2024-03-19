@@ -1,10 +1,17 @@
 {
     "PyOS_Commands": [
-    {
-        "help":     "A help command.",
-        "ver":      "Displays system version",
-        "prsh":     "The legacy Print Shell ported to vNext",
-        "exit":     "Quits from PythonOS."
-    }
+        {   "name": "help",
+            "desc": "A help command."
+        },
+
+        {   "name": "ver",
+            "desc": "Displays system version."
+        },
+        {   "name": "prsh",
+            "desc": "The legacy Print Shell ported to vNext."
+        },
+        {   "name": "exit",
+            "desc": "Quits from PythonOS."
+        }
     ]
 }

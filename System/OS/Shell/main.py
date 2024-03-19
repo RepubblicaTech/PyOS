@@ -15,7 +15,8 @@ class Shell:
         elif command == "help":
             with open('System/OS/Shell/commands.json') as cmdJSON:
                 self.jsonData = json.load(cmdJSON)
-                print(self.jsonData['PyOS_Commands'])
+                for command in self.jsonData['PyOS_Commands']:
+                    print(f'{command['name']}\n     {command['desc']}\n')
         elif command == "ver":
             print(f"pyos-v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
             if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):

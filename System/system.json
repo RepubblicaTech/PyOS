@@ -1,8 +1,8 @@
 {
     "PyOS" : [
     {
-        "system_version": "0.2 Alpha 2",
-        "system_semantic": "0.2.a2",
+        "system_version": "0.2 Alpha 3",
+        "system_semantic": "0.2.a3",
         "system_codename": "Version Next",
         "kernel_version": "1.0a"
     }
