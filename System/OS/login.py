@@ -18,13 +18,12 @@ class Login:
         self.password = input(f"Enter {self.uname}'s password: ")
         Login.loginValidation(self, uname=self.uname, passw=self.password)
 
-    def loginValidation(self, uname='root', passw='toor'):
+    def loginValidation(self, uname, passw):
         if passw == self.passwd and uname == self.username:
             systemDirCheck = chk.Check()
             if systemDirCheck.checkDir('System/OS/Shell') == False:
                 missingShellError = errHandler.Crash('Login', 'LxL001')
         else:
             incorrectCredentialsError = errHandler.Crash('Login', 'LxL002')
-            exit(0)
 
         session = main.Shell(self.uname)
