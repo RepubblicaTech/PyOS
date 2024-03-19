@@ -29,6 +29,14 @@ Displays available commands.
 
 exit.
 
+### `ver`
+
+Displays system version
+
+### `prsh`
+
+The Print Shell has been ported from the Legacy version to vNext
+
 # Thanks to:
 
 ![@Setr0](https://github.com/Setr0) for the JSON authentication and his help for code troubleshooting
