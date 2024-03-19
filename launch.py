@@ -1,5 +1,6 @@
 from System.Preboot import pre, chk
 from System.OS.Boot import boot
+from System.OS.libs import errHandler
 from System.Recovery import recover
 from System import install
 import time, os
@@ -17,6 +18,9 @@ else:
     pass
 
 chkFiles = chk.Check()
+
+errorHandle = errHandler.Crash('AlphaTestErrors', 'AxET001')
+
 
 if chkFiles.checkIntegrity('System/users.json'):
     pass                    # if user coniguration is present, boot into OS
@@ -50,5 +54,5 @@ if foundFiles == 2:
     print("System files found. Starting environment...")
     environment = boot.Boot()
 else:
-    print("Error BxC001: Some system files are missing. Booting into Recovery mode...")
+    print("Error PBxC001: Some system files are missing. Booting into Recovery mode...")
     recovery = recover.RecoveryMode()

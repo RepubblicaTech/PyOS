@@ -1,0 +1,8 @@
+{
+    "AlphaTestErrors": [
+        {
+            "code": "AxET001",
+            "desc": "Alpha Error test."
+        }
+    ]
+}
