@@ -15,7 +15,6 @@ class Setup:
         self.obj = {}
         self.username = ""
         self.password = ""
-        print("WARNING: THIS IS A STRIPPED-DOWN VERSION OF PYTHONOS,\nUSE THIS FOR TESTING PURPOSES ONLY.")
         print("Welcome to PythonOS version Next installer!")
         print("Please configure at least one user to make the environment work")
         self.username = input("Enter your username: ")
@@ -25,7 +24,7 @@ class Setup:
             time.sleep(0.03)
         self.obj["PyOS_Env"] = [{"Username": self.username, "Password": self.password}]
         self.pyos_json = open("System/users.json", "w")
-        json.dump(self.obj, self.pyos_json, indent=2)
+        json.dump(self.obj, self.pyos_json, indent=4)
         print("Install finished! You can quit the installer by pressing Enter then start launch.py")
         input()
         exit(0)

@@ -6,6 +6,7 @@ from System import install
 import time, os
 
 print("Starting up...")
+print("REMEMBER: This is still Alpha software,\nit may contain bugs and flaws.")
 time.sleep(1)
 
 # print(os.getcwd())
@@ -35,12 +36,20 @@ Then boot if there are no problems
 
 '''
 
-if (prCheck.checkPkgs() == True and prCheck.CheckOSIntegrity() == True):
-    print("You're good to go! Booting into PyOS...")
+if (prCheck.checkPkgs(packages=['pip', 'tqdm'])):
+    print("Required packages found.")
     pass
 else:
-    osIntegrityError = errHandler.Crash('preBoot', 'PxC001')
+    errHandler.Crash('preBoot', f'PxP001')
+    print(prCheck.missing)
+    exit(1)
+
+if (prCheck.CheckOSIntegrity()):
+    pass
+else:
+    errHandler.Crash('preBoot', 'PBxC001')
     recovery = recover.RecoveryMode()
+    exit(1)
 
 # Check if essential system files exist
 files = ['System/users.json', 'System/OS/Shell/main.py']
@@ -51,8 +60,9 @@ for File in files:
         foundFiles += 1
 
 if foundFiles == 2:
-    print("System files found. Starting environment...")
+    print("Required files found. Starting environment...")
     environment = boot.Boot()
 else:
-    missingFilesError = errHandler.Crash('preBoot', 'PBxC001')
+    errHandler.Crash('preBoot', 'PBxC001')
     recovery = recover.RecoveryMode()
+    exit(1)

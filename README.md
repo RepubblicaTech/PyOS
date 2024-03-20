@@ -35,7 +35,7 @@ Displays system version
 
 ### `prsh`
 
-The Print Shell has been ported from the Legacy version to vNext
+The Print Shell ported from the "Legacy" to vNext
 
 # Thanks to:
 

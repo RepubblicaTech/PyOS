@@ -5,34 +5,35 @@ import System.Preboot.chk as chk
 
 class PreBoot:
 
-    def checkPkgs(self) -> bool:
-        self.requiredPkgs = ['pip', 'tqdm', 'wget']
+    def checkPkgs(self, packages: list = ['pip', 'tqdm']) -> bool:
         self.found = 0
+        self.required = 0
+        self.missing = []
 
-        for pkg in self.requiredPkgs:
+        for pack in packages:
+            self.required += 1
+
+        for pkg in packages:
             self.activityOne = chk.Check()
-            self.activityOne.checkPackages(package=pkg)
-            
-            if self.activityOne.checkPackages() == True:
+            if self.activityOne.checkPackages(pkg) == True:
                 self.found += 1
+            else:
+                self.missing.append(pkg)
             
-        if self.found < 3:
+        if self.found != self.required:
             return False
         else:
-            print("All required packages found.")
             return True
 
-    def CheckOSIntegrity(self) -> bool:
-        self.requiredDirs = ['OS/Boot', 'Recovery']
+    def CheckOSIntegrity(self, dirs: list = ['OS/Boot', 'Recovery']) -> bool:
         self.foundDirs = 0
 
-        for dir in self.requiredDirs:
+        for dir in dirs:
             if os.path.isdir(f'System/{dir}') == True:
                 self.foundDirs += 1
                 print(f"Found directory 'System/{dir}'.")
 
         if self.foundDirs == 2:
-            print("All required directories found.")
             return True
         else:
             return False

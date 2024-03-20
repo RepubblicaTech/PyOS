@@ -9,7 +9,7 @@ class Crash:
         self.errorsJson = json.load(open('System/OS/libs/errors.json'))
         for error in self.errorsJson[Phase]:
             if (error['code'] == errorCode):
-                print(f'Error {error['code']}: {error['desc']}')
+                input(f'Error {error['code']}: {error['desc']}')
 
 
     def checkBootPhase(self, Phase) -> int:
