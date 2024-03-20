@@ -11,6 +11,10 @@
         {   "name": "prsh",
             "desc": "The legacy Print Shell ported to vNext."
         },
+
+        {   "name": "clear",
+            "desc": "Clears terminal screen."
+        },
         
         {   "name": "exit",
             "desc": "Quits from PythonOS."

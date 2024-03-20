@@ -1,13 +1,15 @@
 from System.Preboot import pre, chk
 from System.OS.Boot import boot
-from System.OS.libs import errHandler
+from System.OS.libs import errHandler, base
 from System.Recovery import recover
 from System import install
 import time, os
 
 print("Starting up...")
-print("REMEMBER: This is still Alpha software,\nit may contain bugs and flaws.")
 time.sleep(1)
+
+base.clearScreen()
+print("REMEMBER: This is still Alpha software,\nit may contain bugs and flaws.")
 
 # print(os.getcwd())
 

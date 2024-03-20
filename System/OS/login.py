@@ -1,6 +1,6 @@
 import json
 import System.Preboot.chk as chk, System.OS.Shell.main as main
-from System.OS.libs import errHandler
+from System.OS.libs import errHandler, base
 
 class Login:
     def __init__(self, loginData='users.json'):
@@ -18,11 +18,13 @@ class Login:
         
         self.user = input("Enter your username: ")
         self.password = input(f"Enter {self.user}'s password: ")
+        base.clearScreen()
 
         while (self.loginValidation(self.user, self.password) == False):
             errHandler.Crash('Login', 'LxL002')
             self.user = input("Enter your username: ")
             self.password = input(f"Enter {self.user}'s password: ")
+            base.clearScreen()
         
         session = main.Shell(self.user)
 

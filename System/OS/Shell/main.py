@@ -1,5 +1,5 @@
-import System.OS.Software.ver as ver
-import System.OS.Software.PrShell as prsh
+from System.OS.Software import ver, PrShell as prsh
+from System.OS.libs import base
 import json
 
 class Shell:
@@ -24,6 +24,8 @@ class Shell:
                 print(f"Codename \"{self.sysVersionVars.codename}\"")
         elif command == "prsh":
             PrSHSession = prsh.PrintShell(username)
+        elif command == "clear":
+            base.clearScreen()
         elif command == "":
             pass
         else:

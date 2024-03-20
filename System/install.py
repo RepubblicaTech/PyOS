@@ -1,4 +1,5 @@
-import time, json, System.OS.libs.pip as pip
+import time, json
+from System.OS.libs import pip, base
 
 try:
     from tqdm import tqdm
@@ -20,6 +21,7 @@ class Setup:
         self.username = input("Enter your username: ")
         self.password = input("Enter a password (optional): ")
         input("If you are sure to continue, press Enter.")
+        base.clearScreen()
         for i in tqdm(range(100), desc='Setting up PythonOS environment'):
             time.sleep(0.03)
         self.obj["PyOS_Env"] = [{"Username": self.username, "Password": self.password}]
