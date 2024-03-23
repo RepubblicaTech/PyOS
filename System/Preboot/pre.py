@@ -5,7 +5,7 @@ import System.Preboot.chk as chk
 
 class PreBoot:
 
-    def checkPkgs(self, packages: list = ['pip', 'tqdm']) -> bool:
+    def checkPkgs(self, *packages) -> bool:
         self.found = 0
         self.required = 0
         self.missing = []
@@ -13,12 +13,12 @@ class PreBoot:
         for pack in packages:
             self.required += 1
 
-        for pkg in packages:
+        for package in packages:
             self.activityOne = chk.Check()
-            if self.activityOne.checkPackages(pkg) == True:
+            if self.activityOne.checkPackages(package) == True:
                 self.found += 1
             else:
-                self.missing.append(pkg)
+                self.missing.append(package)
             
         if self.found != self.required:
             return False
