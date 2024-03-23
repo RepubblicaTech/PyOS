@@ -2,7 +2,7 @@
     "PyOS" : [
     {
         "system_version": "0.2 Preview",
-        "system_semantic": "0.2.pre",
+        "system_semantic": "0.2.preview",
         "system_codename": "Version Next",
         "kernel_version": "1.0"
     }
