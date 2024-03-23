@@ -20,7 +20,7 @@ class PrintShell:
             elif "->" in pr:
                 write = pr.split('->')
 
-                f = open(f"Users/{username}/{write[1]}", 'w')
+                f = open(f"User/{username}/{write[1]}", 'w')
                 f.write(write[0] + "\n")
                 f.close()
 
