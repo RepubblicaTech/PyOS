@@ -22,7 +22,7 @@ class Shell:
             if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
                 print(f" Codename \"{self.sysVersionVars.codename}\"", end='')
 
-            print(f"\npyos-v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
+            print(f"\npyos.v{self.sysVersionVars.version_semantic}_k{self.sysVersionVars.kernel}")
 
         elif command == "prsh":
             PrSHSession = prsh.PrintShell(username)

@@ -1,4 +1,4 @@
-import time, json
+import time, json, os
 from System.OS.libs import pip, base
 
 try:
@@ -27,6 +27,8 @@ class Setup:
         self.obj["PyOS_Env"] = [{"Username": self.username, "Password": self.password}]
         self.pyos_json = open("System/users.json", "w")
         json.dump(self.obj, self.pyos_json, indent=4)
+        os.mkdir(f"Users")
+        os.mkdir(f"Users/{self.username}")
         print("Install finished! You can quit the installer by pressing Enter then start launch.py")
         input()
         exit(0)

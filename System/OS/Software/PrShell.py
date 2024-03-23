@@ -10,7 +10,7 @@ class PrintShell:
             pr = input(self.name + "> ")
             if pr == "quit":
                 os.system('cls')
-                exit(0)
+                return
             elif pr == "help":
                 print("2 commands available:")
                 print("")
@@ -20,10 +20,10 @@ class PrintShell:
             elif "->" in pr:
                 write = pr.split('->')
 
-                f = open(write[1], 'w')
+                f = open(f"Users/{username}/{write[1]}", 'w')
                 f.write(write[0] + "\n")
                 f.close()
 
-                print(f"File saved in PyOS:0/System/Software/{write[1]}.")
+                print(f"File saved in PyOS:0/Users/{username}/{write[1]}.")
             else:
                 print(pr)
