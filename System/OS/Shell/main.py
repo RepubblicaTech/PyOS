@@ -18,10 +18,12 @@ class Shell:
                 for command in self.jsonData['PyOS_Commands']:
                     print(f'{command['name']}\n  {command['desc']}\n')
         elif command == "ver":
+            print(f"PythonOS version {self.sysVersionVars.version}", end='')
+            if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
+                print(f" Codename \"{self.sysVersionVars.codename}\"")
+
             print(f"pyos-v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
 
-            if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
-                print(f"Codename \"{self.sysVersionVars.codename}\"")
         elif command == "prsh":
             PrSHSession = prsh.PrintShell(username)
         elif command == "clear":

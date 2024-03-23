@@ -38,7 +38,7 @@ Then boot if there are no problems
 
 '''
 
-if (prCheck.checkPkgs(packages=['pip', 'tqdm'])):
+if (prCheck.checkPkgs('pip', 'tqdm')):
     print("Required packages found.")
     pass
 else:
