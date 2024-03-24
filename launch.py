@@ -9,7 +9,7 @@ print("Starting up...")
 time.sleep(1)
 
 base.clearScreen()
-print("REMEMBER: This is still Alpha software,\nit may contain bugs and flaws.")
+print("REMEMBER: This is a pre-release of PythonOS. It may not work as intended.\n")
 
 # print(os.getcwd())
 

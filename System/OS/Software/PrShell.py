@@ -24,6 +24,6 @@ class PrintShell:
                 f.write(write[0] + "\n")
                 f.close()
 
-                print(f"File saved in PyOS:0/Users/{username}/{write[1]}.")
+                print(f"File saved in PyOS:0/User/{username}/{write[1]}.")
             else:
                 print(pr)
