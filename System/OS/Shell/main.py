@@ -18,7 +18,7 @@ class Shell:
                 for command in self.jsonData['PyOS_Commands']:
                     print(f'{command['name']}\n  {command['desc']}\n')
         elif command == "ver":
-            print(f"PythonOS version {self.sysVersionVars.version}", end='')
+            print(f"PythonOS Version {self.sysVersionVars.version}", end='')
             if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
                 print(f" Codename \"{self.sysVersionVars.codename}\"", end='')
 
