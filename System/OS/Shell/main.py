@@ -6,7 +6,7 @@ class Shell:
     def __init__(self, username):
         self.sysVersionVars = ver.systemVersion('System/system.json')
         while True:
-            self.cmd = input(f"{username}@vNext #> ")
+            self.cmd = input(f"{username}@pythonos #> ")
             Shell.processInput(self, self.cmd, username)
     
     def processInput(self, command, username):

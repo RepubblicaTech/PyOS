@@ -16,7 +16,7 @@ class Setup:
         self.obj = {}
         self.username = ""
         self.password = ""
-        print("Welcome to PythonOS version Next installer!")
+        print("Welcome to the PythonOS installer!")
         print("Please configure at least one user to make the environment work")
         self.username = input("Enter your username: ")
         self.password = input("Enter a password (optional): ")

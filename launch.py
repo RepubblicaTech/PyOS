@@ -43,6 +43,7 @@ if (prCheck.checkPkgs('pip', 'tqdm')):
     pass
 else:
     errHandler.Crash('preBoot', f'PxP001')
+    input()
     print(prCheck.missing)
     exit(1)
 
