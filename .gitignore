@@ -120,3 +120,4 @@ System/users.json
 *.zip
 Users
 prepare_release.bat
+make.py
