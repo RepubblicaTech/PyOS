@@ -119,5 +119,5 @@ System/users.json
 .vscode
 *.zip
 Users
-prepare_release.bat
+make.bat
 make.py
