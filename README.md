@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+# As you may have noticed, the releases are out of order. This is a problem that i encountered while i was trying to understand semantic versioning and git. It's not Github's fault tho. I take the responsibility, maybe someday i will link to a timeline so everybody knows what was released when.
 # THIS BRANCH IS VERY FREQUENTLY UPDATED, it might contain non-working code. To use a stable version of PythonOS, check out the `main` branch (or the latest stable release)
-=======
-# This is the Linux branch of PythonOS. Will be used for Linux implementation of the PyOS code (obsolete).
-# November 2023 note: this branch may be deleted if code from `main` will work on UNIX systems
->>>>>>> origin/linux
-=======
-# This is the Linux branch of PythonOS. Will be used for Linux implementation of the PyOS code (obsolete).
-# November 2023 note: this branch may be deleted if code from `main` will work on UNIX systems
->>>>>>> linux
 
 # PyOS
 A simple Python OS. 99,9% using Python (almost no `os.system()` stuff)
