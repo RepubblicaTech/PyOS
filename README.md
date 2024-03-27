@@ -1,5 +1,3 @@
-# This branch contains a usable (but NOT STABLE) version of the next PythonOS version. Though it MIGHT contain unstable/non-working code. You can use the `main` branch for a more usable system.
-
 # PyOS
 A simple Python OS. 99,9% using Python (almost no `os.system()` stuff)
 
