@@ -1,4 +1,4 @@
-import os, sys, subprocess
+import os, sys, subprocess, platform
 
 system = sys.platform
 
@@ -9,10 +9,14 @@ def install(*packages):
         elif system == "linux":
             try:
                 subprocess.run(['pip'], check = True)
+                print("\n\n")
             except subprocess.CalledProcessError:
                 os.system('sudo apt install -y python3-pip')
-
-            os.system(f'pip install {package}')
+            if ('arch' in platform.release()):  # Arch Linux
+                print("Arch Linux system detected, installing 'python-tqdm' from pacman.")
+                os.system('sudo pacman -S python-tqdm')
+            else:
+                os.system(f'pip install {package}')
 
 def upgrade(*packages):
     for package in packages:
