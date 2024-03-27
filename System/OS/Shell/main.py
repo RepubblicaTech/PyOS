@@ -10,13 +10,16 @@ class Shell:
             Shell.processInput(self, self.cmd, username)
     
     def processInput(self, command, username):
+
         if command == "exit":
             exit(0)
+
         elif command == "help":
             with open('System/OS/Shell/commands.json') as cmdJSON:
                 self.jsonData = json.load(cmdJSON)
                 for command in self.jsonData['PyOS_Commands']:
                     print(f"{command['name']}\n  {command['desc']}\n")
+        
         elif command == "ver":
             print(f"PythonOS Version {self.sysVersionVars.version}", end='')
             if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
@@ -26,9 +29,12 @@ class Shell:
 
         elif command == "prsh":
             PrSHSession = prsh.PrintShell(username)
+
         elif command == "clear":
             base.clearScreen()
+
         elif command == "":
             pass
+
         else:
             print(f"Error SxCH01: Invalid command <{command}>.")
