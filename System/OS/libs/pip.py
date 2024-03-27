@@ -12,16 +12,16 @@ def install(*packages):
             except subprocess.CalledProcessError:
                 os.system('sudo apt install -y python3-pip')
 
-            os.system('pip3 install ' + packages)
+            os.system(f'pip install {package}')
 
 def upgrade(*packages):
     for package in packages:
         if system == "win32" or system == "darwin":
-            os.system('python -m pip install --upgrade ' + packages)
+            os.system(f'python -m pip install --upgrade {package}')
         elif system == "linux":
             try:
                 subprocess.run(['pip'], check = True)
             except subprocess.CalledProcessError:
                 os.system('sudo apt install python3-pip -y')
             
-            os.system('pip3 install --upgrade ' + packages)
+            os.system(f'pip install --upgrade {package}')
