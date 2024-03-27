@@ -1,0 +1,23 @@
+{
+    "PyOS_Commands": [
+        {   "name": "help",
+            "desc": "A help command."
+        },
+
+        {   "name": "ver",
+            "desc": "Displays system version."
+        },
+
+        {   "name": "prsh",
+            "desc": "v0.2.0 port of the Print Shell from v0.1.5."
+        },
+
+        {   "name": "clear",
+            "desc": "Clears terminal screen."
+        },
+        
+        {   "name": "exit",
+            "desc": "Quits from PythonOS."
+        }
+    ]
+}

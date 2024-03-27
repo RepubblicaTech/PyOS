@@ -112,3 +112,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Files from RepubblicaTech
+.DS_Store
+System/users.json
+.vscode
+*.zip
+Users
+make.bat
+make.py

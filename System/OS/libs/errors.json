@@ -1,0 +1,33 @@
+{
+    "AlphaTestErrors": [
+        {   "code": "AxET001",
+            "desc": "Alpha Error test."
+        }
+    ],
+
+    "preBoot": [
+        {   "code": "PxJ001",
+            "desc": "users.json is missing, booting into installer.."
+        },
+        
+        {   "code": "PxP001",
+            "desc": "Some required python packages were not found. Press Enter to quit..."
+        },
+
+        {   "code": "PBxC001",
+            "desc": "Some system files are missing. Booting into recovery mode..."
+        }
+    ],
+
+    "Boot": [],
+
+    "Login": [
+        {   "code": "LxL001",
+            "desc": "Shell environment not found. Make sure you have downloaded and extracted all PythonOS files. Press Enter to quit..."
+        },
+
+        {   "code": "LxL002",
+            "desc": "Either username or password are incorrect. Check System/users.json for credentials."
+        }
+    ]
+}
