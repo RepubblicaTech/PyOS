@@ -1,3 +1,5 @@
+## As you may have noticed, the releases are out of order. This is a problem that i encountered while i was trying to understand semantic versioning and git. It's not Github's fault tho. I take the responsibility, maybe someday i will link to a timeline so everybody knows what was released when.
+
 # PyOS
 A simple Python OS. 99,9% using pure Python (almost no `os.system()` stuff)
 
