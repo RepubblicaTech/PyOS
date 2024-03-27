@@ -117,3 +117,7 @@ dmypy.json
 .DS_Store
 System/users.json
 .vscode
+*.zip
+Users
+make.bat
+make.py

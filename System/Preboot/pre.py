@@ -5,43 +5,35 @@ import System.Preboot.chk as chk
 
 class PreBoot:
 
-    def checkPkgs(self):
-        self.requiredPkgs = ['pip', 'tqdm', 'wget']
+    def checkPkgs(self, *packages) -> bool:
         self.found = 0
+        self.required = 0
+        self.missing = []
 
-        time.sleep(0.3)
+        for pack in packages:
+            self.required += 1
 
-        for pkg in self.requiredPkgs:
+        for package in packages:
             self.activityOne = chk.Check()
-            self.activityOne.checkPackages(package=pkg)
-            
-            if self.activityOne.checkPackages() == True:
+            if self.activityOne.checkPackages(package) == True:
                 self.found += 1
+            else:
+                self.missing.append(package)
             
-        if self.found < 3:
-            print("Error PxC001: Cannot start PythonOS.\nThere are less or no packages installed than required (pip, tqdm, wget)")
+        if self.found != self.required:
+            return False
         else:
-            print("All required packages found.")
             return True
-        
 
-    def CheckOSIntegrity(self):
-        self.requiredDirs = ['OS/Boot', 'Recovery']
+    def CheckOSIntegrity(self, dirs: list = ['OS/Boot', 'Recovery']) -> bool:
         self.foundDirs = 0
 
-        time.sleep(0.3)
-
-        for dir in self.requiredDirs:
+        for dir in dirs:
             if os.path.isdir(f'System/{dir}') == True:
                 self.foundDirs += 1
                 print(f"Found directory 'System/{dir}'.")
-                time.sleep(0.3)
-            
-            else:
-                print(f"Error PxC002: Directory '{dir}' is missing")
 
         if self.foundDirs == 2:
-            print("All required directories found.")
-            time.sleep(1)
-        
-        return True
+            return True
+        else:
+            return False
