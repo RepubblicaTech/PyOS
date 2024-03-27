@@ -1,4 +1,5 @@
-# As you may have noticed, the releases are out of order. This is a problem that i encountered while i was trying to understand semantic versioning and git. It's not Github's fault tho. I take the responsibility, maybe someday i will link to a timeline so everybody knows what was released when.
+## As you may have noticed, the releases are out of order. This is a problem that i encountered while i was trying to understand semantic versioning and git. It's not Github's fault tho. I take the responsibility, maybe someday i will link to a timeline so everybody knows what was released when.
+
 # THIS BRANCH IS VERY FREQUENTLY UPDATED, it might contain non-working code. To use a stable version of PythonOS, check out the `main` branch (or the latest stable release)
 
 # PyOS

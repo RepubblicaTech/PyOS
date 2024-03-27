@@ -9,7 +9,7 @@ print("Starting up...")
 time.sleep(1)
 
 base.clearScreen()
-print("REMEMBER: This is still Alpha software,\nit may contain bugs and flaws.")
+# print("REMEMBER: This is a pre-release version of PythonOS. It may not work as intended.\n")
 
 # print(os.getcwd())
 
@@ -43,6 +43,7 @@ if (prCheck.checkPkgs('pip', 'tqdm')):
     pass
 else:
     errHandler.Crash('preBoot', f'PxP001')
+    input()
     print(prCheck.missing)
     exit(1)
 

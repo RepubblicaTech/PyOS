@@ -9,7 +9,7 @@
         },
 
         {   "name": "prsh",
-            "desc": "The legacy Print Shell ported to vNext."
+            "desc": "v0.2.0 port of the Print Shell from v0.1.5."
         },
 
         {   "name": "clear",

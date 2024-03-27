@@ -118,3 +118,6 @@ dmypy.json
 System/users.json
 .vscode
 *.zip
+Users
+make.bat
+make.py

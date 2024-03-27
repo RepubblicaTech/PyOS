@@ -7,7 +7,7 @@
 
     "preBoot": [
         {   "code": "PxJ001",
-            "desc": "users.json is missing, press Enter to boot into installer."
+            "desc": "users.json is missing, booting into installer.."
         },
         
         {   "code": "PxP001",
@@ -15,7 +15,7 @@
         },
 
         {   "code": "PBxC001",
-            "desc": "Some system files are missing. Press Enter to boot into recovery mode..."
+            "desc": "Some system files are missing. Booting into recovery mode..."
         }
     ],
 
@@ -27,7 +27,7 @@
         },
 
         {   "code": "LxL002",
-            "desc": "Either username or password are incorrect. Check System/users.json for credentials. Press Enter to retry."
+            "desc": "Either username or password are incorrect. Check System/users.json for credentials."
         }
     ]
 }
