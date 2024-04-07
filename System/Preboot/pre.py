@@ -1,8 +1,6 @@
 import os, time
 import System.Preboot.chk as chk
 
-# Step 1. Check for Python packages
-
 class PreBoot:
 
     def checkPkgs(self, *packages) -> bool:
@@ -10,30 +8,30 @@ class PreBoot:
         self.required = 0
         self.missing = []
 
-        for pack in packages:
-            self.required += 1
-
         for package in packages:
+            self.required += 1
             self.activityOne = chk.Check()
             if self.activityOne.checkPackages(package) == True:
                 self.found += 1
             else:
                 self.missing.append(package)
             
-        if self.found != self.required:
-            return False
-        else:
+        if self.found == self.required:
             return True
+        else:
+            return False
 
-    def CheckOSIntegrity(self, dirs: list = ['OS/Boot', 'Recovery']) -> bool:
+    def CheckOSIntegrity(self, dirs: list = ['Recovery', 'OS/Shell', 'OS/Libs']) -> bool:
+        
+        self.required = 0
         self.foundDirs = 0
-
         for dir in dirs:
+            self.required += 1
             if os.path.isdir(f'System/{dir}') == True:
                 self.foundDirs += 1
                 print(f"Found directory 'System/{dir}'.")
 
-        if self.foundDirs == 2:
+        if self.foundDirs == self.required:
             return True
         else:
             return False

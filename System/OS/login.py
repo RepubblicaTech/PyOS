@@ -4,7 +4,6 @@ from System.OS.libs import errHandler, base
 
 class Login:
     def __init__(self, loginData='users.json'):
-
         self.username = ""
         self.passwd = ""
         self.user = ""
@@ -39,4 +38,3 @@ class Login:
             return False
         
         return True
-        # session = main.Shell(self.uname)

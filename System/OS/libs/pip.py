@@ -11,12 +11,7 @@ def install(*packages):
                 subprocess.run(['pip'], check = True)
                 print("\n\n")
             except subprocess.CalledProcessError:
-                os.system('sudo apt install -y python3-pip')
-            if ('arch' in platform.release()):  # Arch Linux
-                print("Arch Linux system detected, installing 'python-tqdm' from pacman.")
-                os.system('sudo pacman -S python-tqdm')
-            else:
-                os.system(f'pip install {package}')
+                print("pip is not installed. Make sure to follow your distro's instructions to install it.")
 
 def upgrade(*packages):
     for package in packages:
@@ -26,6 +21,4 @@ def upgrade(*packages):
             try:
                 subprocess.run(['pip'], check = True)
             except subprocess.CalledProcessError:
-                os.system('sudo apt install python3-pip -y')
-            
-            os.system(f'pip install --upgrade {package}')
+                print("pip is not installed. Make sure to follow your distro's instructions to install it.")
