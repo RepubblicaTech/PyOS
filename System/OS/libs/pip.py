@@ -7,25 +7,13 @@ def install(*packages):
         if system == "win32" or system == "darwin":
             os.system('python -m pip install ' + packages)
         elif system == "linux":
-            try:
-                subprocess.run(['pip'], check = True)
-                print("\n\n")
-            except subprocess.CalledProcessError:
-                os.system('sudo apt install -y python3-pip')
-            if ('arch' in platform.release()):  # Arch Linux
-                print("Arch Linux system detected, installing 'python-tqdm' from pacman.")
-                os.system('sudo pacman -S python-tqdm')
-            else:
-                os.system(f'pip install {package}')
+            print("Linux system detected.\nDue to the installation method changing from distro to distro, make sure to follow the instructions that suit more your OS.")
+            exit(0)
 
 def upgrade(*packages):
     for package in packages:
         if system == "win32" or system == "darwin":
             os.system(f'python -m pip install --upgrade {package}')
         elif system == "linux":
-            try:
-                subprocess.run(['pip'], check = True)
-            except subprocess.CalledProcessError:
-                os.system('sudo apt install python3-pip -y')
-            
-            os.system(f'pip install --upgrade {package}')
+            print("Linux system detected.\nDue to the installation method changing from distro to distro,\nmake sure to follow the instructions that suit more your OS.")
+            exit(0)

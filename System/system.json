@@ -1,10 +1,10 @@
 {
     "PyOS" : [
     {
-        "system_version": "0.2.0",
-        "system_semantic": "0.2.0",
-        "system_codename": "Version Next",
-        "kernel_version": "1.0"
+        "system_version": "0.2.2",
+        "system_semantic": "0.2.2",
+        "system_codename": "Minor Next 2",
+        "kernel_version": "1.1"
     }
     ]
 }
