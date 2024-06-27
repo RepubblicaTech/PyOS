@@ -9,23 +9,8 @@ print("Starting up...")
 time.sleep(1)
 
 # base.clearScreen()
-# print("REMEMBER: This is a pre-release version of PythonOS. It may not work as intended.\n")
 
 # print(os.getcwd())
-
-# print(sys.argv)
-
-# check if CLI arguments are present
-if (len(sys.argv) > 1 and sys.argv[1] == "reset"):
-    print("Entering reset mode.")
-    exit(0)
-
-if(os.getcwd() == "C:\\Windows\\system32"):
-    print("Due to some issues with double-clicking the launch.py,\nyou must start PythonOS from a terminal window in the PyOS directory.\nPress Enter to Exit.")
-    input()
-    exit(2)
-else:
-    pass
 
 chkFiles = chk.Check()
 
