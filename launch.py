@@ -1,6 +1,6 @@
 from System.Preboot import pre, chk
-from System.OS.Boot import boot
 from System.OS.libs import errHandler, base
+from System.OS import login
 from System.Recovery import recover
 from System import install
 import time, os, sys
@@ -71,7 +71,7 @@ for File in files:
 
 if foundFiles == 2:
     print("Required files found. Starting environment...")
-    environment = boot.Boot()
+    login.Login(loginData='System/users.json')
 else:
     errHandler.Crash('preBoot', 'PBxC001')
     recovery = recover.RecoveryMode()
