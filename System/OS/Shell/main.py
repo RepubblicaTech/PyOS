@@ -22,7 +22,7 @@ class Shell:
         
         elif command == "ver":
             print(f"PythonOS Version {self.sysVersionVars.version}", end='')
-            if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
+            if ((("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic)) and (("Beta" in self.sysVersionVars.version) or ("Alpha" in self.sysVersionVars.version))):
                 print(f" Codename \"{self.sysVersionVars.codename}\"", end='')
 
             print(f"\npyos.v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
