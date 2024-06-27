@@ -21,7 +21,7 @@ class PreBoot:
         else:
             return False
 
-    def CheckOSIntegrity(self, dirs: list = ['Recovery', 'OS/Shell', 'OS/Libs']) -> bool:
+    def CheckOSIntegrity(self, dirs: list = ['Recovery', 'OS/Shell', 'OS/libs']) -> bool:
         
         self.required = 0
         self.foundDirs = 0
@@ -30,6 +30,8 @@ class PreBoot:
             if os.path.isdir(f'System/{dir}') == True:
                 self.foundDirs += 1
                 print(f"Found directory 'System/{dir}'.")
+            else:
+                print(f"Directory 'System/{dir}' not found.")
 
         if self.foundDirs == self.required:
             return True
