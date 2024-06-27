@@ -25,10 +25,10 @@ class Shell:
             if ("b" in self.sysVersionVars.version_semantic) or ("a" in self.sysVersionVars.version_semantic):
                 print(f" Codename \"{self.sysVersionVars.codename}\"", end='')
 
-            print(f"\npyos-v{self.sysVersionVars.version_semantic}_k{self.sysVersionVars.kernel}")
+            print(f"\npyos.v{self.sysVersionVars.version_semantic}-k{self.sysVersionVars.kernel}")
 
         elif command == "prsh":
-            prsh.PrintShell(username)
+            PrSHSession = prsh.PrintShell(username)
 
         elif command == "clear":
             base.clearScreen()
@@ -37,4 +37,4 @@ class Shell:
             pass
 
         else:
-            print(f"Error SxCH01: Invalid command <{command}>. Use <help> for available commands.")
+            print(f"Error SxCH01: Invalid command <{command}>.")
