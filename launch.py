@@ -18,6 +18,7 @@ time.sleep(1)
 # check if CLI arguments are present
 if (len(sys.argv) > 1 and sys.argv[1] == "reset"):
     print("Entering reset mode.")
+    resetSystem = recover.RecoveryMode(mode='reset')
     exit(0)
 
 if(os.getcwd() == "C:\\Windows\\system32"):
@@ -58,7 +59,7 @@ if (prCheck.CheckOSIntegrity()):
     pass
 else:
     errHandler.Crash('preBoot', 'PBxC001')
-    recovery = recover.RecoveryMode()
+    recovery = recover.RecoveryMode(mode='recovery')
     exit(1)
 
 # Check if essential system files exist
