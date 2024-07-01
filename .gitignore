@@ -120,4 +120,5 @@ System/users.json
 *.zip
 User/
 make.bat
+make.sh
 make.py
